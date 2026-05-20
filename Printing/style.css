@@ -1,0 +1,384 @@
+/*
+	Georgia
+	Demo css to show basic, blog-like styling
+	Visit http://www.ulysses.app/styles for full reference
+*/
+
+body {
+	text-align:  center;
+	color:       #000;
+	font-family: "Adobe Caslon Pro", "Adobe Caslon";
+	font-size:   13px;
+	line-height: 1.5;
+	margin:      0;
+	padding:     0.5em 0.5em 0.5em 0.5em;
+	background:  rgb(253, 253, 253);
+	margin:      auto;
+}
+
+a {
+	outline:         none !important;
+	font-weight:     bold;
+	text-decoration: none;
+}
+
+a:link {
+	color: #0000FF;
+}
+
+a:visited {
+	color: #606;
+}
+
+a:hover {
+	color: #606;
+}
+
+a:active {
+	color:   #0000FF;
+	outline: none;
+}
+
+h1 {
+	font-family: "Avenir Next";
+	font-size:   200%;
+	line-height: 1.2;
+	font-style:  normal;
+	margin:      2.5em 0 1em;
+}
+
+h2 {
+	font-family: "Avenir Next";
+	font-weight: bold;
+	font-size:   150%;
+	line-height: 140%;
+	/* margin:      1.5em 0 0.75em; */
+}
+
+h3 {
+	font-family: "Adobe Caslon Pro", "Adobe Caslon";
+	font-weight:    600;
+	text-align:     left;
+	font-size:      110%;
+	margin:         1.75em 0 0.75em;
+}
+
+p {
+	margin: 0;
+	text-align: left;
+	font-size:  100%;
+}
+
+p.interview {
+	margin-left: 4.5em;
+	text-indent: 0;
+}
+
+p.interview .speaker {
+	display: inline-block;
+	width: 4em;
+	margin-left: -4.5em;
+	margin-right: 0.5em;
+	font-weight: bold;
+}
+
+p + p {
+	margin:      0;
+	text-indent: 1.5em;
+}
+
+p.interview + p.interview {
+	margin-top: 0.5em;
+}
+
+p:not(.interview) + p.interview {
+	margin-top: 2em;
+}
+
+h1 + p {
+	text-indent: 0;
+}
+
+.quote + p {
+	text-indent: 0;
+	margin-top: 1em;
+}
+
+p + ul, p + ol, p + dl {
+	margin-bottom: 1.5em;
+}
+
+img {
+	max-width: 80%;
+	height: auto;
+}
+
+figure {
+	margin:     2em 0 1.5em 0;
+	width:      100%;
+	text-align: center;
+}
+
+figure img {
+	border: 1px solid #ccc;
+}
+
+figcaption {
+	font-size:   66%;
+	padding:     1em;
+	padding-top: 0.5em;
+	color:       #aaa;
+}
+
+blockquote {
+	border-left:  5px solid #eee;
+	padding-left: 1em;
+	margin:       1em 0;
+}
+
+blockquote p {
+	text-indent: 0 !important;
+	font-style:  italic;
+}
+
+blockquote small {
+	display:     block;
+	line-height: 1.7em;
+}
+
+ul, ol, dl {
+	text-align: left;
+}
+
+ul, ol {
+	padding-left: 0.1em;
+}
+
+ul li, ol li {
+	padding-left: 0.3em;
+	margin-top:   0.2em;
+}
+
+li p {
+	margin-top:  0px;
+	text-indent: 0em;
+}
+
+li {
+	margin-bottom: 0.2em;
+}
+
+hr {
+	border: none;
+	height: 1px;
+	background-color: #eee;
+	margin: 20px 0;
+}
+
+h1 + hr {	
+	margin:    -0.5em 0 1.5em;
+	font-size: 400%;
+}
+
+ol#footnotes {
+	margin-top:   4.5em;
+	border-top:   1px solid #eee;
+	padding-top:  1em;
+	font-size:    80%;
+	padding-left: 1.5em;
+}
+
+ol#footnotes p {
+	text-indent: 0px;
+}
+
+figure + p {
+	text-indent: 0em !important;
+}
+
+/* Code Highlighting */
+
+code {
+	font-family: 'Courier', monospace;
+	font-size:   80%;
+	color:       #f8f8f2;
+
+	padding:       0.5em 0.5em;
+	background:    #272822;
+	border-radius: 5px;
+}
+
+pre > code {
+	padding:		none;
+	background:     none;
+	border: 		none;
+}
+
+pre {
+	color:         #f8f8f2;
+	text-align:    left;
+	line-height:   1.2em;
+	overflow-x:    scroll;
+	background:    #DDD;
+	padding:       20pt;
+	margin:        20pt 0;
+	border-radius: 3pt;
+	white-space:   pre-wrap;
+	tab-size:      4;
+}
+
+.syntax-all {
+}
+
+.syntax-entity {
+	color: #fd971f;
+}
+
+.syntax-tag {
+	color: #f92672;
+}
+
+.syntax-keyword {
+	color: #f92672;
+}
+
+.syntax-parameter {
+	color: #a6e22e;
+}
+
+.syntax-string {
+	color: #e6db74;
+}
+
+.syntax-constant {
+	color: #9effff;
+}
+
+.syntax-variable {
+	color: #a6e22e;
+}
+
+.syntax-escape {
+	color: #ae81ff;
+}
+
+.syntax-comment {
+	color: #75715e;
+}
+
+.syntax-error {
+	color:      #f8f8f0;
+	background: #f92672;
+	padding:    2px 6px;
+}
+
+/* Markup Highlighting */
+
+.syntax-heading {
+	font-weight: bold;
+	color:       #ae81ff;
+}
+
+.syntax-italic {
+	font-style: italic;
+}
+
+.syntax-bold {
+	font-weight: bold;
+}
+
+.syntax-deleted {
+	color:            #b31d28;
+	background-color: #ffeef0;
+}
+
+.syntax-inserted {
+	color:            #22863a;
+	background-color: #f0fff4;
+}
+
+.syntax-changed {
+	color:            #e36209;
+	background-color: #ffebda;
+}
+
+.syntax-link {
+	text-decoration: underline;
+	color:           #008fff;
+}
+
+.syntax-list {
+	color: #fd971f;
+}
+
+table {
+	display: block;
+	overflow-x: scroll;
+	table-layout: auto;
+	margin-left: -10px;
+	margin-right: -10px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border-collapse: separate;
+	border-spacing: 10px 0;
+}
+
+th, td {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: left;
+	vertical-align: baseline;
+}
+
+th {
+	border-bottom: 1px solid black;
+}
+
+thead:first-of-type > tr:first-of-type > th {
+	border-bottom: 3px solid black;
+}
+
+td {
+	border-bottom: 1px solid #ddd;
+}
+
+td > p {
+	text-align: unset;
+}
+
+@keyframes highfade {
+	0% {
+		background-color: none;
+	}
+	20% {
+		background-color: yellow;
+	}
+	100% {
+		background-color: none;
+	}
+}
+
+@-webkit-keyframes highfade {
+	0% {
+		background-color: none;
+	}
+	20% {
+		background-color: yellow;
+	}
+	100% {
+		background-color: none;
+	}
+}
+
+a:target, ol#footnotes li:target, sup a:target {
+	animation-name:                    highfade;
+	animation-duration:                2s;
+	animation-iteration-count:         1;
+	animation-timing-function:         ease-in-out;
+	-webkit-animation-name:            highfade;
+	-webkit-animation-duration:        2s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: ease-in-out;
+}
