@@ -12,11 +12,11 @@ So we let the idea sit in the back of our minds, and later we wrote a little cod
 
 Sharing a single photo has been done a hundred times on iOS. Instagram was an important app to nail the timeline UI. There were other attempts to bring the simplicity of Instagram to other platforms: Favd for App.net, and Pressgram for blogs. But hardly anyone had attempted to tackle photo curation, group sharing, and publishing. Sunlit 1.0 was our first pass at this and we were excited to try solving a new problem with photos.
 
-They say you should spend money on experiences — on memories, not things. Sunlit helped you put those memories together, share them as a group, and rediscover them when it matters.
+They say you should spend money on experiences — on memories, not things. Sunlit helped put those memories together, share them as a group, and rediscover them when it matters.
 
 That vision evolved over the years. When App.net faded away, Jon and I rebuilt Sunlit around blogs. In subsequent versions it moved closer to the Instagram UI with a timeline of photos from friends, but powered by blogs.
 
-![][image-2] ![][image-3]
+![][image-2]![][image-3]
 
 ---- 
 
@@ -25,6 +25,21 @@ Sunlit is separate from the official Micro.blog app because that separation lets
 When you a post a longer story with a title and multiple photos using Sunlit, it creates a full blog post, not a microblog post. Because the post has a title, Micro.blog uses that title in the timeline and links back to your post. It also attempts to include a few tiny photo thumbnails in the timeline to give a preview of the post:
 
 ![][image-4]
+
+Sunlit uses Micropub to publish its blog posts. For these longer blog posts with multiple sections and photos, instead of passing an array of photo URLs in Micropub’s `photo` parameter, Sunlit formats its own HTML for the full post with inline image links and sends that to Micro.blog:
+
+	<p>The next day we did a bike tour of the city...</p>
+	
+	<p>
+	  <a href="photo1..."><img src="..." style="display: inline-block; max-height: 200px; width: auto; padding: 1px;"></a>
+	  <a href="photo2..."><img src="..." style="display: inline-block; max-height: 200px; width: auto; padding: 1px;"></a>
+	</p>
+	
+	<p>Murals, CN Tower, trains at Roundhouse Park, sculptures at Ireland Park...</p>
+	
+	<p><a href="photo3..."><img src="..." style="display: inline-block; max-height: 200px; width: auto; padding: 1px;"></a>
+
+This is why using HTML as the foundation for microblogging can be so powerful. Apps are not limited to only the post formats a server platform has designed. There would be no way to create a post like this on Instagram, Threads, or even Mastodon.
 
 ---- 
 
@@ -36,7 +51,7 @@ Sunlit is powered by feeds. Micro.blog provides several feeds specifically for p
 * `yoursite.com/photos/index.json`: A list of blog posts that have included a photo, on a specific Micro.blog-hosted blog.
 * `micro.blog/posts/your-username/photos`: The requested user's photos across any of their blogs.
 
-The last feed includes 2 fields that aren't in other feeds in Micro.blog:
+The last feed includes two fields that aren't in other feeds in Micro.blog:
 
 * The main image in the blog post, in JSON Feed's standard `image` field.
 * A smaller thumbnail version of the photo, in a Micro.blog extension under `_microblog` → `thumbnail_url`.
@@ -50,7 +65,7 @@ Here's a portion of the JSON for that special feed:
 	  "date_published": "2020-01-13T18:01:13+00:00",
 	  "image": "https://www.manton.org/uploads/2020/1be7fcd16d.jpg",
 	  "_microblog": {
-	"thumbnail_url": "https://micro.blog/photos/400/https://www.manton.org/uploads/2020/1be7fcd16d.jpg"
+	    "thumbnail_url": "https://micro.blog/photos/400/https://www.manton.org/uploads/2020/1be7fcd16d.jpg"
 	  }
 	}
 
@@ -91,7 +106,7 @@ Because it comes from a template in your blog's theme, you can style or customiz
 
 The CSS is included inline so that none of the built-in themes need custom CSS for the photos page to work. You can override the CSS Grid spacing and number of columns in your own custom CSS file.
 
-If you need more control over the design, you can create a new theme for your blog and edit the template `layouts/_default/list.photoshtml.html `. This is a Hugo template that loops through the `.Params.photos` variable set by Micro.blog, which is a list of all the JPEGs on your blog. (There is a separate variable, `.Params.images`, that includes all JPEGs and PNGs, so screenshots and other images are also included.)
+If you need more control over the design, you can create a new theme for your blog and edit the template `layouts/_default/list.photoshtml.html`. This is a Hugo template that loops through the `.Params.photos` variable set by Micro.blog, which is a list of all the JPEGs on your blog. (There is a separate variable, `.Params.images`, that includes all JPEGs and PNGs, so screenshots and other images are also included.)
 
 [1]:	https://github.com/cleverdevil/microgram
 

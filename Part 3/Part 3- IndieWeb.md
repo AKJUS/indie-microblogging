@@ -10,7 +10,7 @@ Co-organizer [Evan Prodromou blogged][3] about how current social networks were 
 
 > From the point of view of a typical social web site, if you don't have an account on that site, you don't exist. The only way for your friends on that site to interact with you is if they invite you to join the site.
 
-But Tantek Çelik and Aaron Parecki felt the event was too focused on _platforms_ interoperating, especially between larger companies, and not focused enough on _personal_ web sites being able to participate in social networks. The evening of the last day of the conference, they talked about how they could refocus the conversation around owning your own data.
+But Tantek Çelik and Aaron Parecki felt the event was too focused on _platforms_ interoperating, especially between larger companies, and not focused enough on _personal_ websites being able to participate in social networks. The evening of the last day of the conference, they talked about how they could refocus the conversation around owning your own data.
 
 The phrase "indie web" had been used before. John Gruber used it [in a tweet a year earlier][4] in 2009:
 

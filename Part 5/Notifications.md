@@ -23,9 +23,9 @@ The timeline in a social network like Twitter presents a unique problem for scal
 * A relational database with tables for users, tweets, and the user following relationships. To build the timeline, you can join between the tables. This is fine for a small data set, but could be very slow when someone is following hundreds or thousands of users.
 * A special database that is very good at storing lists of items, with data sets that represent each timeline for every user. When someone tweets, that tweet is effectively copied into the timeline of anyone who follows them. This makes retrieving the timeline very fast because all the data is pre-cached.
 
-This process of sending tweets to everyone who needs them is called “fan out”, and it represented a redesign for Twitter's backend. Over years, Twitter worked to split their monolithic app into separate systems, and they used in-memory databases like Memcache and Redis that were more well-suited to addressing Twitter's performance issues.
+This process of sending tweets to everyone who needs them is called “fan out”, and it represented a redesign for Twitter's backend. Over years, Twitter worked to split their monolithic app into separate systems, and they used in-memory databases like Memcache and Redis that were better well-suited to addressing Twitter's performance issues.
 
-Twitter eventually did get a handle on scaling. Twitter today is fast and reliable. But what of independent blogs? Polling for new posts across thousands or millions of blogs is difficult to scale. How do we get this same instant delivery of posts but across the whole web?
+Twitter eventually did get a handle on scaling. Twitter today is fast and reliable, even despite Elon Musk’s cost-cutting. But what of independent blogs? Polling for new posts across thousands or millions of blogs is difficult to scale. How do we get this same instant delivery of posts but across the whole web?
 
 Long before Twitter was created, Dave Winer was searching for similar answers. He wasn’t working on a platform like Twitter. [In 2001][3] he was building tools that let him blog more easily, working in his favorite writing environment, the outliner. The goal was to get real-time notifications of changes to documents:
 
@@ -33,13 +33,13 @@ Long before Twitter was created, Dave Winer was searching for similar answers. H
 
 Dave continued:
 
-> Most aggregators scan for changes once an hour, but in some situations we want to know immediately when a channel has changed. For example, we include RSS Boxes on many of our sites. When an editor routes a item to a box, we want the news to be displayed immediately, but we don't want to read the RSS channel on every hit. Notification makes it possible to always be current yet conserve bandwidth and server cycles.
+> Most aggregators scan for changes once an hour, but in some situations we want to know immediately when a channel has changed. For example, we include [RSS Boxes][4] on many of our sites. When an editor routes a item to a box, we want the news to be displayed immediately, but we don't want to read the RSS channel on every hit. Notification makes it possible to always be current yet conserve bandwidth and server cycles.
 
 That effort was rebooted in 2009 as rssCloud. But rssCloud was still based on XML-RPC, which was falling out of favor, and RSS itself saw little innovation during this period.
 
 Around the same time, another group came together to develop PubSubHubbub. Short for "publish and subscribe" (with a hub), the name also translates to the clever acronym "PuSH".
 
-Julien Genestoux was a co-author of the PubSubHubbub specification and founder of Superfeedr, itself a hub supporting publish and subscribe. [On the Superfeedr blog][4], Julien wrote that because social networks and blogs already had feeds that represented a user's stream of activities, they could be connected via PubSubHubbub to form more distributed social networks:
+Julien Genestoux was a co-author of the PubSubHubbub specification and founder of Superfeedr, itself a hub supporting publish and subscribe. [On the Superfeedr blog][5], Julien wrote that because social networks and blogs already had feeds that represented a user's stream of activities, they could be connected via PubSubHubbub to form more distributed social networks:
 
 > The next step is to make these feeds “real-time” so that the consuming applications shouldn’t need to poll thousands of feeds or services. _To consume my friends information, I shouldn’t even need to be part of the network on which they publish._ **PubSubHubbub enables that.**
 
@@ -50,4 +50,5 @@ Google Reader would soon shut down. Everyone was too distracted with social netw
 [1]:	http://scripting.com/2001/01/06.html
 [2]:	https://www.recode.net/2018/9/14/17857486/twitter-jack-dorsey-nyu-jay-rosen-bias-neutrality-presence-politics-recode-media-podcast
 [3]:	https://web.archive.org/web/20090326075735/http://www.thetwowayweb.com/soapMeetsRss
-[4]:	https://blog.superfeedr.com/social-networks/federation/pubsubhubbub/xmpp/distributed-social-networks/
+[4]:	https://web.archive.org/web/20090326075735/http://macros.userland.com/basic/viewRssBox
+[5]:	https://blog.superfeedr.com/social-networks/federation/pubsubhubbub/xmpp/distributed-social-networks/

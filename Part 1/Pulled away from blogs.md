@@ -2,7 +2,7 @@
 
 _“You were the captain of a ship, sailing aimlessly through the wilds of the Web. Occasionally you would drop anchor and stop to peruse all the great content that netizens were putting out into the world.” — [The Web Is Fucked][1]_
 
-If you wanted to publish anything on the web in the early 2000s, you created a blog. Blogs had personality. People commented on each others blog, helping build loose communities. They met in person at events like the SXSW Interactive conference.
+If you wanted to publish anything on the web in the early 2000s, you created a blog. Blogs had personality. People commented on each other’s blogs, helping build loose communities. They met in person at events like the SXSW Interactive conference.
 
 Slowly, the rise of larger platforms pulled attention away from blogs. More and more former bloggers posted their content on social networks first.
 
@@ -26,7 +26,7 @@ Before Twitter was large enough and stable enough to dominate centralized microb
 
 ---- 
 
-Twitter now has over 300 million monthly active users. Centralized platforms have become a winner-take-all game because you can't move your followers. Leaving Twitter or Facebook means starting over.
+Twitter had over 300 million monthly active users at its height. Centralized platforms had become a winner-take-all game because you can't move your followers. Leaving Twitter or Facebook meant starting over.
 
 Earlier it wasn't clear Twitter would dominate. In 2007, Twitter was still small enough that you and all your friends could try a new service without feeling like you were leaving everything behind. Twitter was often flaky, with the “fail whale” as a reminder that maybe a better, more stable network existed elsewhere.
 

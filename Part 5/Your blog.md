@@ -24,13 +24,13 @@ It's useful to go back to why I'm working on Micro.blog. In [my Kickstarter vide
 
 Let's break that down. It's specifically three things:
 
-* **Twitter clones usually don't last.** The path is always the same: usage spike at the beginning, an interesting community forms if you're lucky, and then it fades away. For Mastodon not to follow the same course, there has to be something different about it.
-* **Twitter has new harassment problems.** I've written a few times about how [today's social networks are broken]()(http://www.manton.org/2016/11/todays-social-networks-are-broken.html). Mastodon's distributed nature presents an opportunity and challenge for solving this. The capability to disconnect entire instances will likely split the federation into multiple communities.
-* **Twitter popularity is a double-edged sword.** Retweets amplify posts to a larger audience, which is often a good thing but sometimes discourages more thoughtful posts. I've written about this [in the context of Instagram]()(http://www.manton.org/2016/11/fake-news-and-instagram.html). Mastodon is mostly a feature-to-feature clone of Twitter, so it has favorites, reblogs, and some of the popularity contest ramifications.
+* **Twitter clones usually don't last.** The path is always the same: usage spikes at the beginning, an interesting community forms if you're lucky, and then it fades away. For Mastodon not to follow the same course, there has to be something different about it.
+* **Twitter has new harassment problems.** Massive, centralized social networks are broken. Mastodon's distributed nature presents an opportunity and challenge for solving this. The capability to disconnect entire instances will likely split the federation into multiple communities.
+* **Twitter popularity is a double-edged sword.** Retweets amplify posts to a larger audience, which is often a good thing but sometimes discourages more thoughtful posts. Mastodon is mostly a feature-to-feature clone of Twitter. While Mastodon purposefully avoided quoted tweets, it still has favorites, reblogs, trends, and some of the popularity contest ramifications.
 
 Micro.blog's approach instead starts with blogs. Rather than trying to recreate Twitter with a more open or distributed platform, the idea is to build Twitter-like functionality on top of existing blog platforms like WordPress. You don't need to run your own instance of Micro.blog.
 
-With Mastodon, you usually have of a mix of Twitter-like instances based on ActivityPub, each one holding many users, often thousands. Here are a sample of federated instances:
+With Mastodon, you usually have a mix of Twitter-like instances based on ActivityPub, each one holding many users, often thousands. Here is a sample of federated instances:
 
 ![][image-1]
 
@@ -44,9 +44,9 @@ This is how the web was supposed to work. We've gotten away from it and now it's
 
 Remember that the difference between `domain.com/username` and `username.domain.com` reveals a lot about how a service thinks about the web. Having a hostname or custom domain name means you own your content and can move it. I wish Mastodon had opted for `@username.domain.com` replies instead of `@username@domain.com`, so that it could naturally evolve to simply `@manton.org`.
 
-On the second issue quoted from Kickstarter above, of managing hate and harassment, I knew this had to be planned for from the beginning. That's why [it was my stretch goal][5] and why I've been working with Jean MacDonald to guide the community. There is more about Micro.blog's unique take on balancing openness and safety in Part 6.
+On the second issue quoted from Kickstarter above, of managing hate and harassment, I knew this had to be planned for from the beginning. That's why [it was my stretch goal][3] and why I've been working with Jean MacDonald to guide the community. There is more about Micro.blog's unique take on balancing openness and safety in Part 6.
 
-Mastodon has solved some technology problems and it has had great traction. I'm impressed with what developer [Eugen Rochko][6] has done with it.
+Mastodon has solved some technology problems and it has had great traction. I'm impressed with what developer [Eugen Rochko][4] has done with it.
 
 But I'm just as interested in many things that Mastodon doesn't attempt to solve. Not just the technical issues, but especially around human behavior and empowering people — building UIs that encourage a great community, and tools for publishing that are tied to personal domain names and portable into the future. Micro.blog starts with that as its foundation.
 
@@ -74,11 +74,11 @@ As more Micro.blog users interact with Mastodon users, some of those users will 
 
 ---- 
 
-There are other options for Mastodon-compatible usernames, but with a focus on blogging. [Pleroma][7] bills itself as a “lightweight” fediverse server. [Microblog.pub][8] is a single-user microblogging server you can run yourself. [Bridgy Fed][9] takes a similar approach to Micro.blog, gluing ActivityPub support into an existing blog.
+There are other options for Mastodon-compatible usernames, but with a focus on blogging. [Pleroma][5] bills itself as a “lightweight” fediverse server. [Microblog.pub][6] is a single-user microblogging server you can run yourself. [Bridgy Fed][7] takes a similar approach to Micro.blog, gluing ActivityPub support into an existing blog.
 
 For WordPress, there’s a plugin to enable ActivityPub on your blog, allowing people to follow your blog from Micro.blog and Mastodon, and hooking into WordPress’s comment system for replies. Matt Mullenweg views ActivityPub as an important enough technology that Automattic hired the plugin’s developer, Matthias Pfefferle, to work on improving the plugin full time.
 
-[In a blog post about the IndieWeb and the fediverse][10], Ben Werdmuller wrote that he was moving away from cross-posting to other services, instead keeping the focus on his own site, now that he can participate in the larger world of Mastodon instances:
+[In a blog post about the IndieWeb and the fediverse][8], Ben Werdmuller wrote that he was moving away from cross-posting to other services, instead keeping the focus on his own site, now that he can participate in the larger world of Mastodon instances:
 
 > I want my site to connect to the indieweb; to the fediverse; to people who are connecting via RSS; to people who are connecting via email. No more syndication to third parties. My own website sits in the center of my online identity, using open standards to communicate with outside communities.
 
@@ -94,7 +94,7 @@ On one hand, their platform is well-suited to separating what content they will 
 
 But because Substack is also facilitating subscription payments for authors, this creates a new tension that does not exist in platforms that don't have a way to monetize content.
 
-Substack co-founder Hamish McKenzie [wrote about their decision to allow Nazis][11] to continue to publish on Substack:
+Substack co-founder Hamish McKenzie [wrote about their decision to allow Nazis][9] to continue to publish on Substack:
 
 > We believe that supporting individual rights and civil liberties while subjecting ideas to open discourse is the best way to strip bad ideas of their power. We are committed to upholding and protecting freedom of expression, even when it hurts.
 
@@ -102,16 +102,16 @@ Because of the money, this goes beyond just "supporting" open discourse. Substac
 
 [1]:	https://seths.blog/2018/10/the-first-1000-are-the-most-difficult/
 [2]:	https://www.kickstarter.com/projects/manton/indie-microblogging-owning-your-short-form-writing
-[5]:	https://www.kickstarter.com/projects/manton/indie-microblogging-owning-your-short-form-writing/posts/1785295
-[6]:	https://hackernoon.com/@Gargron
-[7]:	https://pleroma.social
-[8]:	https://github.com/tsileo/microblog.pub
-[9]:	https://fed.brid.gy
-[10]:	https://werd.io/2022/the-fediverse-and-the-indieweb
-[11]:	https://substack.com/@hamish/note/c-45811343
+[3]:	https://www.kickstarter.com/projects/manton/indie-microblogging-owning-your-short-form-writing/posts/1785295
+[4]:	https://hackernoon.com/@Gargron
+[5]:	https://pleroma.social
+[6]:	https://github.com/tsileo/microblog.pub
+[7]:	https://fed.brid.gy
+[8]:	https://werd.io/2022/the-fediverse-and-the-indieweb
+[9]:	https://substack.com/@hamish/note/c-45811343
 
-[image-1]:	https://book.micro.blog/uploads/2022/1dacc8e099.png
-[image-2]:	https://book.micro.blog/uploads/2022/289471261d.png
+[image-1]:	https://book.micro.blog/uploads/2026/fediverse-bubbles.png
+[image-2]:	https://book.micro.blog/uploads/2026/fediverse-justme.png
 [image-3]:	https://book.micro.blog/uploads/2020/06ea8b4570.png
 [image-4]:	https://book.micro.blog/uploads/2020/1604f51c3b.png
 [image-5]:	https://book.micro.blog/uploads/2020/7732a61ebf.png

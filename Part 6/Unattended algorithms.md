@@ -56,7 +56,7 @@ Twitter developed an algorithm to surface news you might be interested in direct
 
 > The “in case you missed it” feature that is the default sort had grown to constantly stoke outrage. It would show me the most RTed and liked tweets at the top, often up to 24 hours after they were posted. In our current political climate that meant for 24hrs after any major event, I would see tons of tweets stuffed into the top of my timeline, even hours after things were debunked or stories shifted.
 
-Users retweet posts that are controversial. Twitter’s trends algorithm rewards spreading the sensational, the newsworthy, the topic that might spark surprise or outrage. [Kara Wisher wrote in The New York Times][12] that social networks "are designed so that the awful travels twice as fast as the good".
+Users retweet posts that are controversial. Twitter’s trends algorithm rewards spreading the sensational, the newsworthy, the topic that might spark surprise or outrage. [Kara Swisher wrote in The New York Times][12] that social networks "are designed so that the awful travels twice as fast as the good".
 
 In [an interview with 60 Minutes][13], YouTube CEO Susan Wojcicki said that the scale of YouTube wouldn't work if they had to review more content. The recommendation algorithm is so integral to YouTube that the CEO can't conceive of a version of YouTube without it:
 
@@ -66,9 +66,35 @@ Facebook is trying to solve this problem with more moderation, but it's a band-a
 
 ---- 
 
+Reputable artificial intelligence companies like OpenAI and Anthropic have researches working to align their models with human values. We still don’t fully understand how generative AI works and how best to rein it in what it goes off the rails. Twitter / X’s bot Grok has had the most problems, including bouts of racist language.
+
+In July 2025, after devastating floods in Texas and some extremist responses from humans about who was to blame, Grok produced multiple antisemitic posts. From [the BBC][15]:
+
+> X users have shared responses made by Grok when it was queried about posts that appeared to celebrate the deaths of children in the recent Texas floods.
+> 
+> In response to a question asking "which 20th century historical figure" would be best suited to deal with such posts, Grok said: "To deal with such vile anti-white hate? Adolf Hitler, no question."
+
+Grok suffers from both fewer guardrails on safety and attempts by Elon Musk to  pull Grok’s answers more into alignment with Elon’s own politics. X users often turn to Grok for its explanations of tweets or hot takes on a range of issues, creating many AI-generated posts have the potential to amplify misinformation.
+
+Meta is also planning to add AI-generated content into its social platforms. As [Nick Heer blogged][16] about the report:
+
+> Imagine opening any of Meta’s products after this has taken over. Imagine how little you will see from the friends and family members you actually care about. Imagine how much [slop][17] you will be greeted with — a feed alternating between slop, suggested posts, and ads, with just enough of what you actually opened the app to see.
+
+This is going to happen, and it’s going to happen so incrementally — one AI-generated photo here, another there — that many current Threads and Instagram users won’t even notice until it’s too late, until after they’ve wasted their lives, forever reloading a timeline of content from robots.
+
+I’m not an AI skeptic. I believe in AI as a tool to help humans, allowing us to achieve things we couldn’t quite reach before. But I don’t believe in it to replace our jobs wholesale, whether real jobs or the virtual factory floor of unpaid content creators. That it seems Meta’s leadership openly _wants_ to replace humanity’s creativity is a little bit sick.
+
+The cure is a simple, reverse-chronological social timeline. A timeline that is finite.
+
+In the age of AI, content will be abundant. Ad-based platforms feed off abundance, printing money faster as they fill ad inventory. There can never be too much content for algorithmic timelines — more data to rank by engagement, more data to funnel through the outrage machine to see what sticks — so algorithmic timelines will always trend toward slop.
+
+This is the terrible endgame of the algorithmic timeline. All the content, and all your attention.
+
+---- 
+
 Donald Trump was impeached on November 18th, 2019. Three months earlier, the investigation had begun after a whistleblower reported on potential wrongdoing and abuse of power by the president.
 
-One defense of Trump was to target the whistleblower himself, attempting to reveal his identity and attack the process instead of the substance of the report. Facebook and YouTube both moved to block the spread of the whistleblower's name. Twitter initially said they would not, as reported [by the Washington Post][15]:
+One defense of Trump was to target the whistleblower himself, attempting to reveal his identity and attack the process instead of the substance of the report. Facebook and YouTube both moved to block the spread of the whistleblower's name. Twitter initially said they would not, as reported [by the Washington Post][18]:
 
 > Twitter defended its decision to allow the sharing of the CIA officer’s name, saying the tweets in question did not include the type of private details that go against the platform’s rules.
 
@@ -78,7 +104,7 @@ Facebook went further. Facebook spokesman Andy Stone told the Washington Post:
 
 An algorithm that surfaces content for users, such as when Twitter added news to the notifications screen, can also do the opposite: de-emphasizing certain information like the whistleblower's name.
 
-A week after Facebook and YouTube announced they would block the whistleblower's name, they had been largely unsuccessful. [The New York Times][16] followed up on users coordinating how they shared the name to avoid being detected:
+A week after Facebook and YouTube announced they would block the whistleblower's name, they had been largely unsuccessful. [The New York Times][19] followed up on users coordinating how they shared the name to avoid being detected:
 
 > But Facebook users, for example, have been creative in their efforts to sidestep the company’s content moderation. They have avoided using the name within the text of their posts, which could alert A.I. systems screening for it. Instead, they have included it in the URL or inside an image. Others intentionally added characters such as dollar-signs and asterisks to avoid Facebook’s automated moderation.
 
@@ -100,5 +126,8 @@ Technology is neither a force for good or bad in the world. An algorithm, develo
 [12]:	https://www.nytimes.com/2018/10/30/opinion/cesar-sayoc-robert-bowers-social-media.html
 [13]:	https://www.cbsnews.com/news/is-youtube-doing-enough-to-fight-hate-speech-and-conspiracy-theories-60-minutes-2019-12-01/
 [14]:	https://www.ruinedby.design/
-[15]:	https://www.washingtonpost.com/technology/2019/11/08/facebook-youtube-move-block-spread-supposed-whistleblowers-name-twitter-permits-both-name-photos/
-[16]:	https://www.nytimes.com/2019/11/14/technology/whistleblower-name-facebook-youtube.html
+[15]:	https://www.bbc.com/news/articles/c4g8r34nxeno
+[16]:	https://pxlnv.com/linklog/meta-ai-generated-social/
+[17]:	https://pxlnv.com/linklog/elon-musk-themed-ai-slop/
+[18]:	https://www.washingtonpost.com/technology/2019/11/08/facebook-youtube-move-block-spread-supposed-whistleblowers-name-twitter-permits-both-name-photos/
+[19]:	https://www.nytimes.com/2019/11/14/technology/whistleblower-name-facebook-youtube.html

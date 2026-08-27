@@ -16,7 +16,7 @@ To reach more people, we would need more tools and that meant an IndieWeb specif
 
 Whereas most RSS readers sync with a centralized API like Feedbin, indie readers would distribute the syncing and caching of feeds to any number of servers. You could have your own indie reader server, or you could have an account on a shared server powered by software such as Aaron Parecki’s Monocle.
 
-These server are based on a new API called Microsub. What Micro**pub** is for _publishing_ posts, Micro**sub** is for _subscribing_ to blogs. Indie readers use both Micropub and Microsub to provide a unified interface to reading and posting.
+These servers are based on a new API called Microsub. What Micro**pub** is for _publishing_ posts, Micro**sub** is for _subscribing_ to blogs. Indie readers use both Micropub and Microsub to provide a unified interface to reading and posting.
 
 ### Microsub
 

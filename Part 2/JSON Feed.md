@@ -7,9 +7,9 @@ Twenty years after RSS was getting its start, [Brent Simmons blogged about][2] i
 
 > I agree completely — but I also believe that developers (particularly Mac and iOS developers, the group I know best) are so loath to work with XML that they won’t even consider building software that needs an XML parser. Which says to me that JSON Feed is needed for the survival of syndication.
 
-We believed that a new format would help the open web get a kick, bootstrapping new work. RSS is pervasive, but there are little quirks that still trip up developers, and XML has fallen out of favor. New APIs are being written in JSON.
+We believed that a new format would help the open web get a kick, bootstrapping new work. RSS is pervasive, but there are little quirks that still trip up developers. New APIs are being written in JSON.
 
-JSON Feed is an alternative to RSS. JSON Feed is easy to generate and was designed with microblogs in mind. The title in each post is optional:
+JSON Feed is an alternative to RSS. JSON Feed is easy to generate and was designed with microblogs in mind:
 
 > Microblogs, which are often plain text and without titles. So much web writing today is Twitter-like, which is actually plain text.
 
@@ -18,21 +18,21 @@ Another advantage of JSON is that HTML can be used without the special escaping 
 Here's an example JSON Feed with a single microblog post:
 
 	{
-	    "version": "https://jsonfeed.org/version/1",
-	    "home_page_url": "http://www.manton.org",
-	    "feed_url": "http://www.manton.org/feed/json",
-	    "title": "Manton Reece",
-	    "items": [
+	  "version": "https://jsonfeed.org/version/1.1",
+	  "title": "Manton Reece",
+	  "items": [
+	    {
+	      "id": "http://www.manton.org/2018/04/6721.html",
+	      "url": "http://www.manton.org/2018/04/6721.html",
+	      "content_html": "<p>No sweep. What a great game. Go Spurs.</p>",
+	      "date_published": "2018-04-22T21:56:28+00:00",
+	      "authors": [
 	        {
-	            "id": "http://www.manton.org/2018/04/6721.html",
-	            "url": "http://www.manton.org/2018/04/6721.html",
-	            "content_html": "<p>No sweep. What a great game. Go Spurs.</p>",
-	            "date_published": "2018-04-22T21:56:28+00:00",
-	            "author": {
-	                "name": "manton"
-	            }
+	          "name": "manton"
 	        }
-	    ]
+	      ]
+	    }
+	  ]
 	}
 
 This clarity led to quick adoption. Within weeks of releasing the specification, many popular apps had added support for JSON Feed.
@@ -42,8 +42,6 @@ JSON Feed also helped achieve the goal of having more feed readers update to sup
 This is what my microblog looks like in Feedbin. Notice that the list has variable heights to accommodate the full text of a short post, including inline photos:
 
 ![][image-1]
-
-Micro.blog extends JSON Feed with a few extra fields that are appropriate for a microblogging service, such as account username and whether a post has been favorited by the current user.
 
 JSON Feed uses a special field naming convention to add custom objects to a feed. Fields that start with an underscore character are custom objects provided by a service like Micro.blog. Micro.blog uses the field name `_microblog` for its custom objects.
 
@@ -56,7 +54,7 @@ JSON Feed uses a special field naming convention to add custom objects to a feed
 	  }
 	}
 
-Adding these custom fields to JSON Feed allows Micro.blog to use JSON Feed for its API, rather than inventing a new JSON format. The JSON APIs for Twitter, Facebook, Medium, and other social networks are all very different and not compatible with any other apps without custom support. Because Micro.blog uses JSON Feed for any API endpoint that returns a list of posts, Micro.blog's API can often be used directly by other feed readers.
+Adding these custom fields to JSON Feed allows Micro.blog to use JSON Feed for its API, rather than inventing a new JSON format. The JSON APIs for Twitter / X, Facebook, Medium, and other social networks are all very different, not compatible with any other apps without custom support. Because Micro.blog uses JSON Feed for any API endpoint that returns a list of posts, Micro.blog's API can often be used directly by other feed readers.
 
 The following API endpoints all return JSON Feed:
 

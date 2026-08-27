@@ -12,7 +12,7 @@ If the URLs for your previous blog posts are different than the URLs on Micro.bl
 
 If you're moving from a blog system not supported by Micro.blog, you may be able to automate moving the posts over. [Kahlil Lechelt has created a script][1] that will work with static-site generators such as Jekyll or Hugo by importing from a folder of Markdown files.
 
-**Mirroring back to WordPress**
+### Mirroring back to WordPress
 
 Some people prefer to use Micro.blog because it's easier to post to, but still want those microblog posts to go back to their main WordPress blog. The [Feed Importer plugin][2] for WordPress by Michael Lichwa will load your microblog's RSS feed, looking for new posts and copying them over to your WordPress blog.
 

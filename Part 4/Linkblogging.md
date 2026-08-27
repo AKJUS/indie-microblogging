@@ -2,7 +2,11 @@
 
 _“These are lean times in social bookmarking. The staff at del.icio.us has been eviscerated by layoffs, and the project is now being run by a skeleton crew. Magnolia, the other useful bookmarking site, has gone offline for the summer while it implements a new ‘[don't irretrievably lose everyone's data][1]’ feature.” — [Maciej Cegłowski][2] in 2009, developing what would become Pinboard_
 
-Linkblogging is a form of microblogging that emphasizes linking to other web sites. As you’re reading your favorite sites on the web, or following links shared from friends, you blog links to the articles that are noteworthy. Optionally you add some short commentary, but the focus is mostly on the title or quote from the web page you’re linked to. The link away from your own blog is the most important piece.
+Linkblogging is a form of microblogging that emphasizes linking to other websites. As you’re reading your favorite sites on the web, or following links shared from friends, you blog links to the articles that are noteworthy. Optionally you add some short commentary, but the focus is mostly on the title or quote from the web page you’re linked to. The link away from your own blog is the most important piece.
+
+Rebecca Blood wrote about this format in The Weblog Handbook:
+
+> …for these folks it seemed the most natural thing in the world to put the record of their travels around the Web on the Web, and so a particular type of website was born. Enthusiastic surfers turned their home pages into a running list of links with descriptive text to inform their readers why they should click the link and wait for the page to download.
 
 HTML is well-suited for the linkblog format. Snippets of HTML can have inline links, block quotes, or a photo preview. These kind of fragments work great in a timeline-like, reverse-chronological blog format, but they could work equally well assembled into newsletters. If there’s audio, they could be assembled into a podcast feed.
 
@@ -57,9 +61,11 @@ Bloggers using linkblogs are reading web pages and linking to the ones they find
 
 Linkblogs are essentially a convention for attribution. Even just an author name and link make the web a little better and more resilient to linkrot, because the reference persists even when a linked web page is lost.
 
-Micro.blog has deep support for bookmarks and blogging about books you’ve read, even integrating with IndieBookClub which is built on the IndieWeb building blocks Microformats and Micropub. Micro.blog also leverages [Quotebacks][12] for its “embed” feature to make it easier to quote a microblog post.
+---- 
 
-Quotebacks was introduced by Tom Critchlow and Toby Shorin in 2020 as a way to bring the ease-of-use of social networks “embed” features to the rest of the web. Introducing Quotebacks, Tom wrote:
+Micro.blog has deep support for bookmarks and blogging about books you’ve read. It integrates with IndieBookClub, which is built on the IndieWeb building blocks Microformats and Micropub. Micro.blog also leverages [Quotebacks][12] for its “embed” feature to make it easier to quote a microblog post.
+
+Quotebacks were introduced by Tom Critchlow and Toby Shorin in 2020 as a way to bring the ease-of-use of social networks “embed” features to the rest of the web. Introducing Quotebacks, Tom wrote:
 
 > The ultimate goal is to encourage and activate a deeper cross-blogger discussion space. To promote diverse voices and encourage _networked writing_ to flourish.
 

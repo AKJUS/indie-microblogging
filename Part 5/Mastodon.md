@@ -20,7 +20,7 @@ Sarah Jeong, who had written about the frustration with Twitter's reply changes,
 
 > But Mastodon's norms aren't set in stone. And mastodon.social is only one instance in a larger federation. There _could_ be an instance with the fast-paced and hard-edged humor I've come to value from Twitter. There could be an instance propagated with news junkies and commentariat.
 
-People were also pulled in because of the perception that Twitter wasn't doing anything about hate and harassment. If App.net had come along during the backslash against Twitter's increasingly tight hold on what developers could build, Mastodon was released after the narrative around harassment was clearly defined.
+People were also pulled in because of the perception that Twitter wasn't doing anything about hate and harassment. If App.net had come along during the backlash against Twitter's increasingly tight hold on what developers could build, Mastodon was released after the narrative around harassment was clearly defined.
 
 As marketing for Mastodon, its instance-based messaging resonated with people who didn't think Twitter's rules were working, or enforced. Wired covered Mastodon's rise [in 2017][4]:
 
@@ -72,15 +72,15 @@ These latter standards would form the initial foundation for Mastodon. Austin wr
 
 > The protocol has been simplified as much as possible, but many technologies have been doomed to obscurity due to the propeller head nature of properly implementing various schemes properly.
 
-Evan Prodromou, who had helped organize Federated Social Web Summit, also built Identi.ca, a microblogging service based on the StatusNet technology that he had lead the development of. StatusNet would become OStatus, also used in software such as GNU Social which powered early instances.
+Evan Prodromou, who had helped organize Federated Social Web Summit, also built Identi.ca, a microblogging service based on the StatusNet technology whose development he had led. StatusNet would become OStatus, also used in software such as GNU Social, which powered early instances.
 
 OStatus was a suite of protocols, bundling together APIs for notifications, replies, and user profile discovery. As Mastodon was taking off, the Mastodon developer community retooled part of the foundation for Mastodon to replace OStatus with a new API, ActivityPub.
 
 ActivityPub is built on ActivityStream, which outlines keywords that can be used for the social web. Things like an actor (user), note, or reply. The format uses JSON-LD.
 
-Mastodon also had a REST API for building clients. Mastodon on the web was easier for newcomers to understand who were fleeing Twitter, and having the API meant native apps could be built, something users were used to having on Twitter.
+Mastodon also had a REST API for building clients. Mastodon on the web was easier for newcomers who were fleeing Twitter to understand, and having the API meant native apps could be built, something users were used to having on Twitter.
 
-The history is a bit tangled, with several forks along the way from Identi.ca, Mastodon, and privacy-focused alternatives to Facebook like Diaspora. Once Mastodon had established itself as the overwhelming "winner" of the fediverse, with more people contributing to standards such as ActivityPub, the fediverse became a stable platform that other Mastodon-compatible services were built on.
+The history is a bit tangled, with several forks along the way from Identi.ca, Mastodon, and privacy-focused alternatives to Facebook like Diaspora. Once Mastodon had established itself as the overwhelming "winner" of the fediverse, with more people contributing to standards such as ActivityPub, the fediverse became a stable platform on which other Mastodon-compatible services were built.
 
 [1]:	https://medium.com/we-distribute/one-mammoth-of-a-job-an-interview-with-eugen-rochko-of-mastodon-23b159d6796a
 [2]:	https://blog.joinmastodon.org/2017/03/learning-from-twitters-mistakes/

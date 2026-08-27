@@ -42,7 +42,7 @@ And it goes further than that. The race for the most likes and retweets feeds in
 
 ---- 
 
-Twitter has retweets. Facebook has sharing. But Instagram had no built-in reposting. On Instagram, there was no instantaneous way to share someone else’s post to all of your followers.
+Twitter / X has retweets. Facebook has sharing. But Instagram had no built-in reposting. On Instagram, there was no instantaneous way to share someone else’s post to all of your followers.
 
 The first version of Instagram was built by a very small team. They had grown slowly and expanded the UI thoughtfully. I think the lack of a repost feature was deliberate.
 
@@ -52,9 +52,9 @@ Sarah Frier confirmed this in her book about Instagram, No Filter:
 
 When you have to put a little work into posting, you take it more seriously. At the end of 2016, there was a debate about the role of fake news stories, a topic we'll return to in Part 6. I wonder if fake news would have spread so quickly on Facebook if it was a little more difficult to share an article before you’ve read more than the headline.
 
-Instagram is just photos. Landscapes and people, buildings and food, not just images that are screenshots of text. Real photos are inherently more immune to controversy than news headlines.
+Instagram (until the TikTok-inspired Reels) was just photos. Landscapes and people, buildings and food, not just images that are screenshots of text. Real photos are inherently more immune to controversy than news headlines.
 
-It’s not easy to build software that encourages good behavior. When I look at my Instagram timeline I see beautiful photos, hand-drawn art, and snapshots of everyday life. I see the very best of the world. It’s not the full truth, but it’s all true.
+It’s not easy to build software that encourages good behavior. When I used to look at my Instagram timeline — before the current era as AI-generated content is set to dominate the platform — I saw beautiful photos, hand-drawn art, and snapshots of everyday life. It was the very best of the world. Not the full truth, but all true.
 
 Instagram was no accident. The only question: was it unique to photos, or can the same quality be applied to microblogging?
 
@@ -64,9 +64,11 @@ There is a connection between influencers and ads. Platforms can reward and enco
 
 As influencers promote products, it blurs the lines between real content and ads. Native advertising becomes an accepted part of the experience instead of a jarring break from reading or watching content.
 
+Mastodon and most decentralized platforms are also influenced by repost and like counts. Armed with a database of popular posts, developers cannot resist showing these stats and ranking trending posts. Despite Mastodon’s “no algorithms” marketing, the Trending section is powered by an algorithm, highlighting posts that are receiving the most likes and boosts. It can be manually curated, though, giving admins control over what users see.
+
 ---- 
 
-Social networks like Facebook (and Twitter) are designed to reward the sensational video. The timeline algorithm, "like" counts, and quick re-sharing — these all contribute to surfacing both the best _and worst_ content. Whatever drives engagement.
+Social networks are designed to reward the sensational video. The timeline algorithm, "like" counts, and quick re-sharing — these all contribute to surfacing both the best _and worst_ content. Whatever drives engagement.
 
 And that comes from their massive scale. [Jeffrey Zeldman wrote about][6] how ad-based services like Twitter need as many posts as possible:
 
@@ -96,7 +98,7 @@ Alexis Madrigal [explored the impact of retweets for The Atlantic][10]. Anger sp
 
 > Retweets make up more than a quarter of all tweets. When they disappeared, my feed had less punch-the-button outrage. Fewer mean screenshots of somebody saying precisely the wrong thing. Less repetition of big, big news. Fewer memes I’d already seen a hundred times. Less breathlessness. And more of what the people I follow were actually thinking about, reading, and doing.
 
-Seeing more of what people were actually thinking and creating gets us back to Instagram, still focused on photos, with nothing like the retweet. It's ironic that Instagram, the platform that more than any other has been so consumed by influencers, is naturally resistant to the viral spread of news. The UI matters.
+Seeing more of what people were actually thinking and creating gets us back to Instagram, focused on photos, with nothing like the retweet. It's ironic that Instagram, the platform that more than any other has been so consumed by influencers, is naturally resistant to the viral spread of news. The UI matters.
 
 [1]:	https://www.jstor.org/stable/1594539?seq=1
 [2]:	https://www.mirrorproject.com/mirror/?id=3454

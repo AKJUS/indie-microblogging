@@ -2,9 +2,9 @@
 
 _“If Facebook's power to swing elections is like the Ring, then the only solution is to destroy that power.” — [Scott Rosenberg][1]_
 
-Facebook’s power is not absolute. Unlike true monopolies that can ride their success for decades, Facebook is always looking out for the next app that will pull away millions of their fickle users, who pay for Facebook with nothing except their time and entanglement in the social graph. Facebook’s paranoia of competition makes them ruthless.
+Facebook’s power is not absolute. Unlike true monopolies that can ride their success for decades, Facebook is always looking out for the next app that will pull away millions of their fickle users, who pay for Facebook with nothing except their time and entanglement in the social graph. Facebook’s paranoia about potential competitors makes them ruthless.
 
-[As Kevin Roose wrote in The New York Times][2] after the leaked Facebook Files, Facebook is weaker than we knew. They are in trouble:
+[As Kevin Roose wrote in The New York Times][2] after the leaked Facebook Files, Facebook was weaker than we knew. They were in trouble:
 
 > Not financial trouble, or legal trouble, or even senators-yelling-at-Mark-Zuckerberg trouble. What I’m talking about is a kind of slow, steady decline that anyone who has ever seen a dying company up close can recognize.
 
@@ -12,7 +12,7 @@ Facebook’s power is not absolute. Unlike true monopolies that can ride their s
 
 > And as users leave, network effects start to work in reverse: though every user that joins makes your service more valuable, every user that leaves makes the service less valuable.
 
-Attacked on all sides, with slowly eroding trust and rising competition like TikTok, Facebook is no longer in a position of strength. In fact, [Daily active users dropped globally][4] in 2021 for the first time in Facebook’s history.
+Attacked on all sides, with slowly eroding trust and rising competition like TikTok, Facebook was no longer in a position of strength. In fact, [Daily active users dropped globally][4] in 2021 for the first time in Facebook’s history.
 
 ---- 
 
@@ -60,7 +60,7 @@ The industry is going that way because users are slowly forcing it to go that wa
 
 Power corrupts. For social networks, the corruption is not necessarily because of unethical human behavior but because the very concentration of power inherent in massive centralized social networks means platforms can be exploited. They also lean away from interoperability, reinforcing existing monopolies.
 
-[In late 2019 it was revealed][11] that Twitter employees were using their access to the platform to steal private user data and hand it to Saudi Arabia. They targeted Twitter because of Twitter's size. There are so many people are on Twitter, exploiting the platform will give them access to more private data than a smaller social network with fewer users.
+[In late 2019 it was revealed][11] that Twitter employees were using their access to the platform to steal private user data and hand it to Saudi Arabia. They targeted Twitter because of Twitter's size. There are so many people on Twitter, exploiting the platform will give them access to more private data than a smaller social network with fewer users.
 
 United States attorney David Anderson said:
 
@@ -68,7 +68,7 @@ United States attorney David Anderson said:
 
 Because of Twitter's size and centralized nature, one hack (or internal spying) can compromise many accounts. In 2020, hackers took over 130 popular Twitter accounts, sending tweets as those users to ask followers to send Bitcoin. Before Twitter could shut it down, the hackers had walked away with $180 million in Bitcoin, untraceable.
 
-A more distributed web would limit how many accounts could be hacked with a single exploit. Instead of the hackers being able to send tweets as Barrack Obama, Jeff Bezos, Elon Musk, and many others all at once, if accounts were distributed across different web sites, maybe a hack would have only exploited a single account, limiting the damage.
+A more distributed web would limit how many accounts could be hacked with a single exploit. Instead of the hackers being able to send tweets as Barrack Obama, Jeff Bezos, Elon Musk, and many others all at once, if accounts were distributed across different websites, maybe a hack would have only exploited a single account, limiting the damage.
 
 We accept network effects in today's social networks that give more power to the leading tech companies, ignoring earlier models on the internet that showed how competition can bring about change. [Cory Doctorow blogged for the EFF][12] about how despite Usenet's initial top-down structure, it allowed for an entire `alt.` sub-hierarchy under which content flourished, independent of centralized control:
 
@@ -78,7 +78,7 @@ But the fact is that Facebook is not built on an open platform. There is no Usen
 
 Many people go back to regulation, looking for answers, looking for a way to drain the moats that big tech has built around their platforms. With the growing outcry over how social networks like Facebook approach privacy, there have been calls for the government to come in and save us from the worst impulses of the profit-driven social networks. All we need to do is make new laws and let regulation solve the problem we're in.
 
-And there is some logic to this. Challenges in the courts have put pressure on big companies but have largely been unsuccessfully challenging the power of companies like Facebook with its social networks or Apple with its control over iOS app distribution. As shown in the Judge Yvonne Gonzalez Rogers’s ruling in Epic vs. Apple, while some changes can be forced by the courts for anticompetitive reasons, the antitrust laws were written too long ago to be relevant to today’s digital platforms.
+And there is some logic to this. Challenges in the courts have put pressure on big companies but have largely been unsuccessfully challenging the power of companies like Facebook with its social networks or Apple with its control over iOS app distribution. As shown in the Judge Yvonne Gonzalez Rogers’s ruling in Epic vs. Apple, while some changes can be forced by the courts for anticompetitive reasons, the antitrust laws were written too long ago to be fully relevant to today’s digital platforms.
 
 Instead, the power is chipped away in bits until it accelerates, as Basecamp co-founder [David Heinemeier Hansson noted][13] after testifying for the US House Antitrust Subcommittee:
 
@@ -88,9 +88,11 @@ Mark Zuckerberg himself had tried to get in front of this, seemingly asking for 
 
 > Facebook’s most egregious recent move is asking for regulation of the Internet. It is easy for them to ask for regulation, now that they have formed a cozy duopoly with Google that allows them to control citizen data and advertising dollars.
 
+With the successful launch of Threads, Meta has made no secret of their playback: grow to a billion users, then start to monetize the service through ads. By leaning on ActivityPub, they have a potential answer for regulation such as the European Union’s Digital Markets Act, giving users a limited way of migrating their accounts, and they make the service more acceptable to users whose instinct is to distrust another new, massive walled garden.
+
 While regulation has its place, it's not enough. We can't control what the government does, and most of us don't have the patience to wait. So let's focus on what we can do.
 
-And too often I think we'll be disappointed waiting. Nilay Patel wrote for The Verge [about the $1 billion fine][15] against Facebook by the FTC:
+Too often I think we'll be disappointed waiting. Nilay Patel wrote for The Verge [about the $1 billion fine][15] against Facebook by the FTC:
 
 > That’s actually the real problem here: fines and punishments are only effective when they provide negative consequences for bad behavior. But Facebook has done nothing but behave badly from inception, and it has only ever been slapped on the wrist by authority figures and rewarded by the market.
 
@@ -110,11 +112,11 @@ The replacement for Facebook can’t be another social media company. As Write.a
 
 > We all know Facebook is terrible. This is common knowledge in 2019. But if we're ever going to replace it, we can't frame new solutions in terms of social media. Facebook and Twitter and Instagram and on and on **are** social media. They won that title. Any new entrant to the space that calls themselves that loses by default. So let's not use that title.
 
-So-called Web3, for all its problem trying to reinvent distributed web identity, is at least good marketing because it contains the word “web”. It immediately feels bigger and more important than any single new social media site, even if its solution to the problem of centralization is no better (and possibly much worse) than good solutions like DNS that have existed for decades that we still haven’t taken enough advantage of.
+So-called Web3, for all its problems trying to reinvent distributed web identity, is at least good marketing because it contains the word “web”. It immediately feels bigger and more important than any single new social media site, even if its solution to the problem of centralization is no better (and possibly much worse) than good solutions like DNS that have existed for decades that we still haven’t taken enough advantage of.
 
 ---- 
 
-There's a difference between companies that are paid for directly by users and companies based on massive ad-based networks. Ben Thompson outlined this [in an article about regulation][19], arguing that the super-aggregators like Facebook require government intervention, where other companies that are better aligned with users' interests can be "regulated" by the market:
+There's a difference between companies that are funded directly by users and companies based on massive ad-based networks. Ben Thompson outlined this [in an article about regulation][19], arguing that the super-aggregators like Facebook require government intervention. Other companies that are better aligned with users' interests can be "regulated" by the market:
 
 > I think, though, that platform providers that primarily monetize through advertising should be in their own category: as I noted above, because these platform providers separate monetization from content supply and consumption, there is no price or payment mechanism to incentivize them to be concerned with problematic content; in fact, the incentives of an advertising business drive them to focus on engagement, i.e. giving users what they want, no matter how noxious.
 

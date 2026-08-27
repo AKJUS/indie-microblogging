@@ -14,9 +14,9 @@ Long-time Apple developer James Thompson was on Jeff Veen's podcast Presentable,
 
 > We uploaded software to this thing called the Info-Mac Archive. You emailed a copy of your software to it, and then it got replicated across the internet. So there was an Info-Mac Archive mirror in... Usually most of the major universities around the world would host one, and some of the companies and things. And it meant that there was somewhere close to you that you could download your software from.
 
-The scope of today's internet by comparison is so massive it is hard to fully grasp. Instead of a few servers in a university basement, a single data center might hold thousands of servers.
+The scope of today's internet by comparison is so massive it is hard to grasp fully. Instead of a few servers in a university basement, a single data center might hold thousands of servers.
 
-While the data for monolithic platforms like Facebook is spread across the globe using content-delivery networks, putting photos and other common downloads closer to users, it is run entirely by that platform. The early Info-Mac Archive servers were much more open, distributing control over each mirror to the local operators so they could make the best decisions for their local users, or anyone connecting from the internet.
+While the data for monolithic platforms like Facebook is spread across the globe using content-delivery networks, putting photos and other common downloads closer to users, the data centers are controlled entirely by that platform. The early Info-Mac Archive servers were much more open, distributing control over each mirror to the local operators so they could make the best decisions for their local users, or anyone connecting from the internet.
 
 The Usenet system was transparent and open. Modern content-delivery networks are opaque and keep all the power with the platform provider.
 

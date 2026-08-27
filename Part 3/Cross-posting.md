@@ -12,13 +12,19 @@ In her book about the founding of Instagram, No Filter, Sarah Frier described ho
 
 > What if they made a social network that came with an option to deliver your photos to Foursquare, Facebook, Twitter, and Tumblr all at once? Playing nice with the new social giants would be easier than competing with them. Instead of having to build a network from scratch, the app could just piggyback off already-established communities.
 
-The goal with Micro.blog is for us to get back to our roots with blogging — to write on our own web sites first, not as an afterthought to Twitter. Cross-posting is an important bootstrap for that.
+The goal with Micro.blog is for us to get back to our roots with blogging — to write on our own websites first, not as an afterthought to Twitter. Cross-posting is an important bootstrap for that.
+
+![][image-1]
 
 The IndieWeb’s [POSSE][1] is an acknowledgement that we don’t always want to completely ignore the big social networks. It’s pragmatic:
 
 > POSSE is about staying in touch with current friends now, rather than the potential of staying in touch with friends in the future.
 
 With cross-posting, we can prioritize posting to our own site, while still staying engaged with existing friends. Social networks may come and go, but the canonical version of our posts live at our own indie microblog.
+
+![][image-2]
+
+It should be as automatic as possible. Post to your blog first, and let platforms like Micro.blog take care of the rest, sending a copy of your posts out to other services.
 
 ### Setbacks
 
@@ -32,9 +38,7 @@ After Facebook required Micro.blog to re-apply for even this limited access to p
 
 The dependency on other APIs can already be like a whack-a-mole game of adapting to changing APIs. Early Twitter apps would stop working if they weren't updated to version 1.1 of their API, not to mention the developer-hostile policy changes that could obsolete some apps. There were similar upgrades necessary when LinkedIn redesigned their API.
 
-Facebook went beyond just changing their API. They actually removed basic functionality.
-
-Facebook and Instagram are at odds with the principles of the open web. I never want to remove a Micro.blog feature that users find valuable, but in this case we had little choice, and it’s best for Micro.blog to move on from Facebook cross-posting.
+Facebook went beyond just changing their API. They actually removed basic functionality. And when Elon Musk started making changes at Twitter, free access to the API became even more limiting, requiring a $100/month subscription for basic posting. Facebook, Instagram, and Twitter / X are at odds with the principles of the open web.
 
 ### Usernames
 
@@ -58,7 +62,7 @@ Micro.blog is based heavily around RSS and JSON feeds. As Micro.blog processes t
 
 To configure cross-posting, click Account → "Edit Feeds & Cross-posting". This page shows the feeds for your account. For sites hosted on Micro.blog, it will usually just include 1 feed, but you can also add feed URLs for external blogs outside of Micro.blog.
 
-![][image-1]
+![][image-3]
 
 Next to the RSS feed you would like to automatically cross-post, just click the "Add Twitter" link. You'll be prompted to authorize your Twitter account, or an account on another service.
 
@@ -76,23 +80,15 @@ You can continue to reply directly on Twitter, and also on Micro.blog. Replies p
 
 ### IFTTT
 
-Another option for cross-posting is a service like IFTTT. This is a good choice if you need to post to platforms that Micro.blog does not support.
+Another option for cross-posting is a service like IFTTT or Zapier. These are good choices if you need to post to platforms that Micro.blog does not support.
 
 [IFTTT][4] — short for "if this, then that" — is a great solution for connecting different web services together. With just a few clicks, you can configure IFTTT to take the microblog posts in your RSS feed and automatically send the post content to Twitter.
 
 Start by [creating a new applet][5]. For the first part — the "if this" — select the [RSS Feed channel][6]. Add a "New feed item" trigger, which will run the IFTTT recipe whenever the RSS feed includes a new post.
 
-![][image-2]
-
-Enter the URL for your RSS feed. On Micro.blog, the default RSS feeds are at `yourdomain.com/feed.xml`. If you only want to cross-post from a specific category on Micro.blog, you can use the format `yourdomain.com/categories/my-category.xml`.
-
-![][image-3]
-
-The second half of the recipe uses the [Twitter channel][7]. Configure the "Post a tweet" action to take the RSS item content and send it to Twitter as the tweet text.
-
 ![][image-4]
 
-In the tweet action, you want to replace the text with the special `{{EntryContent}}` value. This will take the full text from the RSS feed and include it in the tweet.
+Enter the URL for your RSS feed. On Micro.blog, the default RSS feeds are at `yourdomain.com/feed.xml`. If you only want to cross-post from a specific category on Micro.blog, you can use the format `yourdomain.com/categories/my-category.xml`.
 
 ![][image-5]
 
@@ -102,11 +98,11 @@ You can continue to reply and favorite directly on Twitter, and also on Micro.bl
 
 If you're using WordPress, you can also use plugins to handle cross-posting. The Jetpack plugin has a feature called Publicize that connects to Twitter and other platforms. You can enable it in WordPress under Jetpack → Settings → Sharing.
 
-There are also more specialized plugins, such as [WP to Twitter][8].
+There are also more specialized plugins, such as [WP to Twitter][7].
 
-The IndieWeb-friendly [Syndication Links][9] plugin by David Shanske will also keep a record with each post for where it was cross-posted to. That way you can add links or icons from your blog post to the same post on other platforms.
+The IndieWeb-friendly [Syndication Links][8] plugin by David Shanske will also keep a record with each post for where it was cross-posted to. That way you can add links or icons from your blog post to the same post on other platforms.
 
-Syndication Links also improves the integration between Micro.blog and WordPress. [Chris Aldrich blogged][10] about the recent update:
+Syndication Links also improves the integration between Micro.blog and WordPress. [Chris Aldrich blogged][9] about the recent update:
 
 > ...this plugin now provides for a per-post decision about exactly what content to send to Micro.blog. It also naturally provides a syndication link from your site back to the Micro.blog post.
 
@@ -119,13 +115,12 @@ Cross-posting is an optional part of indie microblogging. It’s a good way to k
 [4]:	https://ifttt.com/
 [5]:	https://ifttt.com/create
 [6]:	https://ifttt.com/feed
-[7]:	https://ifttt.com/twitter
-[8]:	https://wordpress.org/plugins/wp-to-twitter/
-[9]:	https://wordpress.org/plugins/syndication-links/
-[10]:	https://boffosocko.com/2019/12/15/syndication-links-now-supports-per-post-syndication-to-micro-blog-from-wordpress/
+[7]:	https://wordpress.org/plugins/wp-to-twitter/
+[8]:	https://wordpress.org/plugins/syndication-links/
+[9]:	https://boffosocko.com/2019/12/15/syndication-links-now-supports-per-post-syndication-to-micro-blog-from-wordpress/
 
-[image-1]:	https://book.micro.blog/uploads/2020/f7e6a1a29d.png
-[image-2]:	https://book.micro.blog/uploads/2020/19bc72e9f6.png
-[image-3]:	https://book.micro.blog/uploads/2020/7787779d2a.png
-[image-4]:	https://book.micro.blog/uploads/2020/a26199d375.png
-[image-5]:	https://book.micro.blog/uploads/2020/730c6548b5.png
+[image-1]:	https://book.micro.blog/uploads/2026/image.jpg
+[image-2]:	https://book.micro.blog/uploads/2024/e509c64cb1.png
+[image-3]:	https://book.micro.blog/uploads/2020/f7e6a1a29d.png
+[image-4]:	https://book.micro.blog/uploads/2020/19bc72e9f6.png
+[image-5]:	https://book.micro.blog/uploads/2020/7787779d2a.png

@@ -1,6 +1,6 @@
 ## WebSub
 
-_“That's called polling. And although it works, it's slow and inefficient, and about as annoying as a person in the backseat asking: "Are we there yet?" — Brett Slatkin and Brad Fitzpatrick [in a video for PubSubHubbub][1]_
+_“That's called polling. And although it works, it's slow and inefficient, and about as annoying as a person in the backseat asking: ‘Are we there yet?’” — Brett Slatkin and Brad Fitzpatrick [in a video for PubSubHubbub][1]_
 
 The notifications-based approach of Mastodon means that there doesn’t need to be regular polling. Instead of a client checking a page or feed every few minutes for new posts, ActivityPub in Mastodon sends posts to all followers as the post is published.
 

@@ -163,7 +163,7 @@ To create a new post using HTML, clients can be explicitly about the format by a
 	   "properties": {
 	     "content": [
 	       {
-	         "html": "<p>Hello world.</p>"
+	         "html": [ "<p>Hello world.</p>" ]
 	       }
 	     ]
 	   }
@@ -221,7 +221,7 @@ If you are making a check-in post with venue information, use the checkin proper
 	  }
 	}
 
-Using JSON is helpful for other types of applications too. IndieBookClub is a service that lets people easily post about a book they are reading. It prompts for the book’s title and ISBN, and then formats that as a Micropub request to your server using the `read-of` property, which contains details about the book:
+Using JSON is helpful for other types of applications too. [IndieBookClub][5] is a service that lets people easily post about a book they are reading. It prompts for the book’s title and ISBN, and then formats that as a Micropub request to your server using the `read-of` property, which contains details about the book:
 
 	POST /micropub
 	Authorization: Bearer 123456789
@@ -381,11 +381,11 @@ Some people use categories more like tags, so it’s possible that the results c
 
 IndieWeb blogs often have several post types, loosely following the Microformats standard:
 
-* note: a short microblog post
-* article: a full-length blog post with a title
-* photo: a post that includes one or more photos
-* rsvp: a post that is RSVP-ing to an event
-* reply: a post that is a reply to another post
+* **note**: a short microblog post
+* **article**: a full-length blog post with a title
+* **photo**: a post that includes one or more photos
+* **rsvp**: a post that is RSVP-ing to an event
+* **reply**: a post that is a reply to another post
 * ...and others
 
 This type can be inferred from the content on the page using the Post Type Discovery specification. For example, if the post includes an `img` tag with a Microformats class `u-photo`, it’s a photo post.
@@ -423,9 +423,9 @@ When using the JSON version of Micropub, `mp-channel` is included along with oth
 	
 	{
 	  "type": "h-entry",
+	  "mp-channel": "pages",
 	  "properties" {
-	    "content": "Hello",
-	    "mp-channel": "pages"
+	    "content": [ "Hello" ]
 	  }
 	}
 
@@ -475,3 +475,4 @@ Micropub continues to evolve through extensions, but already has everything you 
 [2]:	http://1998.xmlrpc.com/metaWeblogApi.html
 [3]:	https://cyber.harvard.edu/rss/rss.html#hrelementsOfLtitemgt
 [4]:	https://web.archive.org/web/20030707045207/http://www.sixapart.com/log/2003/06/why_we_need_ech.shtml
+[5]:	https://indiebookclub.biz

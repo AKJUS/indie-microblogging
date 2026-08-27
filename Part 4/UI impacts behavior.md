@@ -78,7 +78,7 @@ Photographers have long loved the format of square photos, or nearly square, lik
 
 The process of making a photo in the 1940s was tedious by today's standards. Adams would visualize the image, testing the framing in his mind, or use a black and white Polaroid to capture what it would look like before he was ready for the final image.
 
-Working today, photographer [Adrian Villa’s photos][11] are in part a throwback to that earlier time. He shoots in black and white, looking for contrast as he captures a rainy day alone off the coast of Spain, or the fog at sunrise over San Francisco, or other landscapes that become timeless stills to suggest a quiet pace.
+Working today, photographer [Adrian Vila’s photos][11] are in part a throwback to that earlier time. He shoots in black and white, looking for contrast as he captures a rainy day alone off the coast of Spain, or the fog at sunrise over San Francisco, or other landscapes that become timeless stills to suggest a quiet pace.
 
 In a [video about composition][12], Adrian talked about the appeal of square photos:
 

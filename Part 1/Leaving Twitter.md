@@ -56,11 +56,11 @@ Meanwhile, Twitter had gone mainstream. Alex Payne had left the company and Twit
 
 The unique tragedy with Twitter’s changing attitude toward developers is that so many of Twitter’s early innovations [did come from third-party developers][9]. The word tweet, the first use of a bird icon, and even the character counter started in Twitterrific. Twitter's new leadership displayed an incredible disrespect for the value developers added to both the ecosystem and core platform.
 
-So I stopped posting to Twitter in 2012. It was many things. The limits on user auth tokens, which had already killed a few popular third-party Twitter apps; the problems with shutting down IFTTT recipes; the guidelines that restricted how you could use your own tweets.
+So I stopped posting to Twitter in 2012. It was because of many things. The limits on user auth tokens, which had already killed a few popular third-party Twitter apps; the problems with shutting down IFTTT recipes; the guidelines that restricted how you could use your own tweets.
 
 I knew leaving would be difficult, so I set up a series of posts to discourage my future self from ever joining again. My final tweets were timed to go out on the anniversary of Steve Jobs’s death. They’re a collected moment, a tribute to both Steve and how great Twitter could be. I like that they’re forever pinned at the top of my profile page.
 
-Years later, when others would leave Twitter because of the chaos caused by Elon Musk’s acquisition, and finally his decision to shut down third-party Twitter apps, some people would tweet their final goodbyes capturing all of that rage and frustration. My last tweet wasn’t like that. It was both a goodbye and a memory of what had made Twitter special. I wanted to highlight the good parts of Twitter because there were so many people causing trouble on the platform. For every beautiful tweet, there was hate and harassment and negative tweets and sarcasm and snark.
+Years later, when others would leave Twitter because of the chaos caused by Elon Musk’s acquisition of the company, and finally his decision to shut down third-party Twitter apps, some people would tweet their final goodbyes capturing all of that rage and frustration. My last tweet wasn’t like that. It was both a goodbye and a memory of what had made Twitter special. I wanted to highlight the good parts of Twitter because there were so many people causing trouble on the platform. For every beautiful tweet, there was hate and harassment and negative tweets and sarcasm and snark.
 
 Overlapping the developer-hostile attitude was a growing realization that Twitter was overwhelmed with managing the community. Hate and harassment spread mostly unchecked. Something about the short, 140-character posts seemed to bring out the worst in people. (I'll cover community and replies in more detail in part 5.)
 
@@ -72,13 +72,13 @@ With the API more limited, there was less incentive to build fun tools that work
 
 > Twitter wrote that they’ll be replacing this with another method of data access, but have not been forthcoming with the details or pricing. Favstar can’t continue to operate in this environment of uncertainty.
 
-It had taken nearly 6 years, but it felt like [2018’s API changes][14] finally wrapped up the work that started in 2012. The apps that are possible with the new Account Activity API are exactly the apps that were encouraged in those other quadrants. The pricing made no sense because it wasn’t designed for traditional Twitter apps like Twitterrific and Tweetbot.
+It had taken nearly 6 years, but it felt like [2018’s API changes][14] finally wrapped up the work that started in 2012. The apps that were possible with the new Account Activity API were exactly the apps that were encouraged in those other quadrants. The pricing made no sense because it wasn’t designed for traditional Twitter apps like Twitterrific and Tweetbot.
 
 Twitter’s history has been tumultuous. Jack Dorsey as CEO was out, then back in. The API was open, then closed, then more open again. And all through it, Twitter’s features hadn’t changed much until recently.
 
 ---- 
 
-Then In 2022, Elon Musk bought Twitter. Massive layouts followed, leaving very few people to manage the API. There was a series of mishandled feature rollouts. Native third-party apps were completely cut off from the Twitter API, and even basic API access was moved to paid plans.
+Then in 2022, Elon Musk bought Twitter. Massive layouts followed, leaving very few people to manage the API. There were a series of mishandled feature rollouts. Native third-party apps were completely cut off from the Twitter API, and even basic API access was moved to paid plans.
 
 [Dave Winer blogged][15] about the Twitter API changes:
 
@@ -94,7 +94,7 @@ I stopped posting to Twitter in 2012 exactly because of this strategy. Elon had 
 
 Elon deservedly gets most of the blame for Twitter’s recent chaos. But Twitter wasn’t going to last forever under any version of its clown car leadership over the last decade. In the long run, we will be thankful that Elon is effectively putting the company out of its misery. We’re going to see innovation on the open web as third-party developers realize they are the ones who have actually been given new life.
 
-And people are realizing that as unimaginable as it first seemed to not use Twitter, once you cut it out of your life it’s fine. Other networks like Mastodon and Threads take its place, or private chats with friends, or other hobbies. Robin Sloan [captured this beautifully][17]:
+And people are realizing that as unimaginable as it first seemed to not use Twitter, once you cut it out of your life it’s fine. Other networks like Mastodon, Bluesky, and Threads take its place, or private chats with friends, or other hobbies. Robin Sloan [captured this beautifully][17]:
 
 > The speed with which Twitter recedes in your mind will shock you. Like a demon from a folktale, the kind that only gains power when you invite it into your home, the platform melts like mist when that invitation is rescinded.
 

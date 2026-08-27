@@ -6,11 +6,11 @@ It's an important part of the mission for Micro.blog to take control back from c
 
 Owning your content isn't just having a copy, whether that's the original or an exported archive from another service. It's more about owning the _live_ version of your content on the web.
 
-Twitter and Facebook are both powerful tools to help people organize. We were reminded of that in the first months of Trump’s presidency, as people worked online to coordinate protests, and in the final months of his presidency, with the Black Lives Matter movement and the death of George Floyd. While these social networks are broken in significant ways, they’re not all bad. They bring people together and expand the reach of posts from our own web sites. That’s why many people embrace cross-posting.
+Twitter and Facebook are both powerful tools to help people organize. We were reminded of that in the first months of Trump’s presidency, as people worked online to coordinate protests, and in the final months of his presidency, with the Black Lives Matter movement and the death of George Floyd. While these social networks are broken in significant ways, they’re not all bad. They bring people together and expand the reach of posts from our own websites. That’s why many people embrace cross-posting.
 
 Just as important is the free press. Not just big sites like the New York Times and Washington Post, but also small sites like yours and mine. There are both legal and technical aspects to preserving this right.
 
-It’s not a good foundation to concentrate so much writing into one place like Twitter or Medium. Distributing writing across more web sites protects us if one massive site shuts down. It gives us flexibility to move to the next popular network if one emerges.
+It’s not a good foundation to concentrate so much writing into one place like Twitter or Medium. Distributing writing across more websites protects us if one massive site shuts down. It gives us flexibility to move to the next popular network if one emerges.
 
 Both reporters and bloggers can break a story. Something too important to ignore. But to be taken seriously, it can’t be from an anonymous Twitter account that’s easy to cast doubt on. It has to come from someone accountable who has built a reputation by publishing good work and owning it.
 

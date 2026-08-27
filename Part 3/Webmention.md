@@ -6,7 +6,7 @@ Webmention is [a W3C recommendation][2] that enables cross-site replies. You can
 
 I don't need to write a separate comment on your site. Instead, my site _notifies your site_ about my reply via Webmention. Your site can then choose to automatically include my reply on the same page as your post, as if my reply was a traditional blog comment.
 
-By writing replies on our own web sites, we can control the URLs and better own our content. Conversations can be distributed across the web instead of needing to be contained together at a silo.
+By writing replies on our own websites, we can control the URLs and better own our content. Conversations can be distributed across the web instead of needing to be contained together at a silo.
 
 Webmention is useful even if you don't want your replies to be displayed next to your regular blog posts. Micro.blog currently stores replies separately, but it still uses Webmention when replying to external blogs so that the reply can be included along with the original post.
 
@@ -20,7 +20,7 @@ Even without Webmention, the web of course is linked with `<a>` tags, one blog p
 
 > The ping provides a firm, explicit link between his entry and yours, as opposed to an implicit link (like a referrer log) that depends upon outside action (someone clicking on the link).
 
-To use TrackBack, web sites needed to include a snippet of RDF in their pages for discovery. The ping itself was sent as form-encoded parameters. At a minimum, the URL of the reply would be included, with optional parameters for title or blog post excerpt.
+To use TrackBack, websites needed to include a snippet of RDF in their pages for discovery. The ping itself was sent as form-encoded parameters. At a minimum, the URL of the reply would be included, with optional parameters for title or blog post excerpt.
 
 Pingback was [introduced by Stuart Langridge][5] as an "automatic TrackBack" that would look at your post for links and ping those blog posts using XML-RPC:
 
@@ -46,7 +46,7 @@ Having the HTML of the reply means we can check that it actually links to the bl
 
 The first step to sending a Webmention is discovering the endpoint URL to send the web request to. On the blog's web page for which you're sending a Webmention, check the HTML source for a `link` tag with `rel="webmention"`. This is similar to looking up a Micropub API endpoint.
 
-	<link rel="webmention" href="https://micro.blog/webmention" />
+	<link rel="webmention" href="https://micro.blog/webmention">
 
 All Micro.blog-hosted blogs use the same Webmention endpoint URL. External blogs such as WordPress will use a URL provided by the Webmention plugin for WordPress.
 
@@ -82,7 +82,7 @@ When receiving the Webmention, Aaron's blog will download the reply from Micro.b
 
 Usually software like Micro.blog will handle this automatically. If you need to manually send a Webmention, the web-based tool Telegraph includes a convenient [Send a Webmention][7] feature. It will discover the Webmention endpoint URL for you based on the post you are sending a reply to.
 
-In Micro.blog, you can @-mention another web site even if that user does not have a Micro.blog account. Starting a post with `@yourdomain.com` will send a Webmention to the target web site's home page. Likewise, external web sites can send Webmentions to blog posts that appear on Micro.blog.
+In Micro.blog, you can @-mention another web site even if that user does not have a Micro.blog account. Starting a post with `@yourdomain.com` will send a Webmention to the target web site's home page. Likewise, external websites can send Webmentions to blog posts that appear on Micro.blog.
 
 ### Sending replies manually
 
@@ -149,13 +149,26 @@ Static-site generators like Jekyll and Hugo can't accept dynamic requests like W
 
 Add a `link` tag to point to `webmention.io`. When you register on Webmention.io, you'll have a username which you can use in the endpoint URL:
 
-	<link rel="webmention" href="https://webmention.io/username/webmention" />
+	<link rel="webmention" href="https://webmention.io/username/webmention">
 
 Now when someone replies to your blog posts, the Webmention ping will be sent to Webmention.io. Webmention.io will record it in its database, making the data available via an API or from JavaScript.
 
 Another project, [Webmention.js][9], builds on Webmention.io to make it easier to show replies for a blog post without writing JavaScript yourself.
 
 It's even possible to replace Micro.blog's own Webmention endpoint with Webmention.io, if you want to keep track of replies and display them in a different way. Micro.blog user Steve Layton [has written a blog post][10] about how to use a custom Micro.blog theme to do this.
+
+Micro.blog has built-in support for Webmention, including retrieving replies for a specific post. You can use [Conversation.js][11] to automatically include replies on your blog post page.
+
+Conversation.js is a snippet of JavaScript you can paste into any blog theme. Wherever you use this JavaScript, Micro.blog will insert the replies for that post. Here we’re using Hugo’s `.Permalink` to pass the current blog post URL:
+
+	<script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}></script>
+
+Or if you’re building your own solution, you can retrieve replies via Micro.blog’s API like this:
+
+	GET /webmention?target=https://my-blog-post&format=jsonfeed
+	Host: micro.blog
+
+If you use `format=jf2`, the response will be in the same format returned by Webmention.io. This kind of consistency makes it easier to switch between Webmention providers. It’s another value of the modularity of IndieWeb building blocks.
 
 ### RSVPs
 
@@ -197,11 +210,19 @@ After you've created your RSVP blog post, the final step is to notify the event�
 
 Webmention is a simple protocol that on its own may appear to do very little. Combined with Microformats and platforms that can store and display reply data, though, it provides the infrastructure for cross-site replies and a flexible set of other reactions like RSVPs and likes, giving our independent blogs the functionality of a social network built for the whole web.
 
-To make this easier for Micro.blog, I created a plug-in called [IndieRSVP][11] that adds a Hugo `rsvp` shortcode that you can use in your blog posts. It takes the event URL and adds the `u-in-reply-to` and `p-rsvp` for you:
+To make this easier for Micro.blog, I created a plug-in called [IndieRSVP][12] that adds a Hugo `rsvp` shortcode that you can use in your blog posts. It takes the event URL and adds the `u-in-reply-to` and `p-rsvp` for you:
 
-	I'm going to this! {{< rsvp href="https://events.indieweb.org/2022/03/micro-camp-2022-IW2Qp3ygHike" >}}
+	I'm going to this! &#123;&#123;< rsvp href="https://events.indieweb.org/2022/03/micro-camp-2022-IW2Qp3ygHike" >}}
 
 Micro.blog will notice the link and automatically send the Webmention for you. We noticed more RSVPs being sent to Micro Camp 2022 as soon as this was a little easier with the plug-in.
+
+---- 
+
+Looking back on the 2002 book [Small Pieces Loosely Joined][13], David Weinberger reminds us that the web was not intended to be an application platform. It’s about documents and parts of documents.
+
+A centralized platform like Facebook or LinkedIn does not need to concern itself as much with replies across websites. It’s all about keeping the content and discussion on a single web site.
+
+For a more distributed web, with replies spread across different sites, a protocol like Webmention is needed to connect conversations together. And when more indie blogs support Webmention, it also enables bridging tools between social networks and blogs.
 
 [1]:	https://twitter.com/fraying/status/1291839876212514817
 [2]:	https://www.w3.org/TR/webmention/
@@ -213,7 +234,9 @@ Micro.blog will notice the link and automatically send the Webmention for you. W
 [8]:	https://webmention.io/
 [9]:	https://github.com/PlaidWeb/webmention.js
 [10]:	https://shindakun.dev/posts/adding-webmentions-to-microblog/
-[11]:	https://micro.blog/account/plugins/view/45
+[11]:	https://help.micro.blog/t/replies-with-conversation-js/67
+[12]:	https://micro.blog/account/plugins/view/45
+[13]:	https://www.smallpieces.com/
 
 [image-1]:	https://book.micro.blog/uploads/2020/010b614b0a.png
 [image-2]:	https://book.micro.blog/uploads/2020/0c94d7c823.png

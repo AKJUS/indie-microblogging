@@ -1,8 +1,10 @@
 ## ActivityPub
 
-_“Future standards — including vocabularies for social applications, activity streams, embedded experiences and in-context actions, and protocols to federate social information such as status updates — will address use cases that range from social business applications, to cross-organization federation, to greater user control over personal data” — [Launch press release][1] of the W3C Social Web Working Group_
+_“Future standards — including vocabularies for social applications, activity streams, embedded experiences and in-context actions, and protocols to federate social information such as status updates — will address use cases that range from social business applications, to cross-organization federation, to greater user control over personal data.” — [Launch press release][1] of the W3C Social Web Working Group_
 
-Between 2014 and 2018, the W3C Social Web Working Group coordinated work drafting several different potential web standards. It was a broad charter, covering both IndieWeb-friendly formats like Micropub and Webmention, as well as some of the formats that would form the foundation of Mastodon.
+Between 2014 and 2018, the W3C Social Web Working Group coordinated work drafting several different potential web standards. It was a broad charter, covering IndieWeb-friendly formats like Micropub and Webmention, as well as some of the formats that would form the foundation of Mastodon.
+
+When we talk about ActivityPub, we usually mean not just the ActivityPub spec but a suite of related standards.
 
 ### WebFinger
 
@@ -27,16 +29,16 @@ The response is JSON, including data such as the URI for the account and links t
 
 	{
 	  "links": [
-	{
-	  "href": "https://mastodon.social/@manton", 
-	  "type": "text/html", 
-	  "rel": "http://webfinger.net/rel/profile-page"
-	}, 
-	{
-	  "href": "https://mastodon.social/users/manton", 
-	  "type": "application/activity+json", 
-	  "rel": "self"
-	}
+	    {
+	      "href": "https://mastodon.social/@manton", 
+	      "type": "text/html", 
+	      "rel": "http://webfinger.net/rel/profile-page"
+	    }, 
+	    {
+	      "href": "https://mastodon.social/users/manton", 
+	      "type": "application/activity+json", 
+	      "rel": "self"
+	    }
 	  ], 
 	  "subject": "acct:manton@mastodon.social"
 	}
@@ -52,6 +54,34 @@ In addition to WebFinger for username lookups, another underspecified aspect of 
 HTTP signatures effectively add new required HTTP headers to verify if the request is arriving as it appears to be, not intercepted and modified in transit. It combines the date, request path, and other fields, cryptographically signing it so that it can be verified on the other side.
 
 Mastodon requires HTTP signatures for any POSTs to the inbox. Additionally, Mastodon can optionally be configured to require HTTP signatures for all requests, even just looking up the user’s profile.
+
+### ActivityStreams
+
+ActivityPub and ActivityStreams are intertwined. ActivityPub describes the protocol for applications to talk to each other. ActivityStreams describes the payload — common types of data that can be sent between applications.
+
+Each request will have an “activity” that tells us the type of a request. For a social network, these activities roughly map to interactions the user takes. Following a user is a “follow” activity, sending a new post is a “create” activity, and so on.
+
+Activities usually have an “actor” — an identifier for the user sending the request — and an “object” — the actual important bits for that type of activity.
+
+The basic JSON structure for creating a new blog post might look like this:
+
+	{
+	  "object": {
+	    "type": "Note",
+	    "content": "Hello..."
+	  }, 
+	  "type": "Create", 
+	  "id": "https://micro.blog/4533FDCDF869351762C5", 
+	  "actor": "https://manton.org/activitypub/manton"
+	}
+
+There are a handful of activities that every server compatible with Mastodon should support. Some platforms also add their own activities or object types and document them.
+
+[Bookwyrm][4] is a Goodreads-inspired project for sharing what books you’re reading, similar to Micro.blog’s own bookshelves and reading goals features. In addition to the “Note” type for microblog posts, they’ve added “review” for a book review and “quotation” for a highlight in a book.
+
+Wherever possible, however, we should use standard types from ActivityStreams. ActivityPub is a complicated protocol to support, with subtle variations between different server implementations. It’s more likely that servers will be compatible with each other if we minimize the number of request types we need to support.
+
+And because we can include HTML in posts created with ActivityPub, we get all the flexibility of inline images and links. There is no need to invent new formats when HTML is already flexible and widely understood. The more we use HTML, the more our platforms can natively build on top of the web instead of alongside it.
 
 ### The inbox
 
@@ -157,23 +187,23 @@ Note that the original follow request is included inside the acceptance. Activit
 Micro.blog posts are just blog posts. That means they use HTML for linking and inline photos. Mastodon posts are more like tweets: instead of inline `<img>` tags for photos, ActivityPub has a separate `attachment` field with any images included in the post.
 
 	"attachment": [
-		{
-		  "type": "Document",
-		  "mediaType": "image/jpeg",
-		  "url": "https://micro.blog/photos/..."
-		},
-		{
-		  "type": "Document",
-		  "mediaType": "image/jpeg",
-		  "url": "https://micro.blog/photos/..."
-		}
+	  {
+	    "type": "Document",
+	    "mediaType": "image/jpeg",
+	    "url": "https://micro.blog/photos/..."
+	  },
+	  {
+	    "type": "Document",
+	    "mediaType": "image/jpeg",
+	    "url": "https://micro.blog/photos/..."
+	  }
 	]
 
 The ActivityStreams 2.0 spec outlines the fields for many of these types like attachments. There is some variance between implementations. For example, Mastodon uses type “Document” for images, while Threads uses type “Image”.
 
 ### Moving instances
 
-While many of the fediverse developer community developed separately from the IndieWeb community, they both share some common principles around the open web, including account portability. If we have many thousands of Mastodon servers, users are going to want to be able to migrate between instances. This is a core selling point of Mastodon, as outlined on the [Mastodon servers page][4]:
+While many of the fediverse developer community developed separately from the IndieWeb community, they both share some common principles around the open web, including account portability. If we have many thousands of Mastodon servers, users are going to want to be able to migrate between instances. This is a core selling point of Mastodon, as outlined on the [Mastodon servers page][5]:
 
 > Find a different server you'd prefer? With Mastodon, you can easily move your profile to a different server at any time without losing any followers.
 
@@ -226,19 +256,19 @@ Updating your followers can take quite a while — likely hours and possibly ov
 
 ---- 
 
-As 2023 was winding down, with a year of turmoil at Twitter, ActivityPub was well positioned to spread to more platforms. David Pierce captured this momentum [in an article at The Verge][5], making the case for the fediverse:
+As 2023 was winding down, with a year of turmoil at Twitter, ActivityPub was well positioned to spread to more platforms. David Pierce captured this momentum [in an article at The Verge][6], making the case for the fediverse:
 
 > Forget the hand-wavy protocol stuff for a second — one of the best things about embracing ActivityPub is that it sticks a crowbar into a single Voltron-ic product like Facebook or Twitter or Snapchat and pries it apart into its component pieces, each one ripe for innovation and new ideas.
 
-Meta’s Threads started testing ActivityPub. Announced directly [from Mark Zuckerberg][6]:
+Meta’s Threads started testing ActivityPub. Announced directly [from Mark Zuckerberg][7]:
 
 > Starting a test where posts from Threads accounts will be available on Mastodon and other services that use the ActivityPub protocol. Making Threads interoperable will give people more choice over how they interact and it will help content reach more people. I'm pretty optimistic about this.
 
-Adam Mosseri, the head of Instagram and Threads, also echoed this point in more detail on subsequent posts [and video updates][7]. The rollout was going to take a little while, but Threads had a clear path for adopting more and more of ActivityPub. Adam said:
+Adam Mosseri, the head of Instagram and Threads, also echoed this point in more detail on subsequent posts [and video updates][8]. The rollout was going to take a little while, but Threads had a clear path for adopting more and more of ActivityPub. Adam said:
 
 > This work is taking longer than we thought given our safety work, given our compliance work, and given all the scrutiny on our company. But over 2024 we’re going to be adding the ability to post from Threads to these other servers. We’re going to eventually also support the ability to show replies in Threads natively, and eventually allow you to even follow accounts on those other servers from the Threads app itself.
 
-Flipboard also embraced ActivityPub, starting by spinning up their own Mastodon instance and then working to build ActivityPub directly into the core Flipboard platform. Flipboard co-founder Mike McCue started a podcast called Dot Social about the fediverse, and [wrote on Medium][8] about the potential for Flipboard:
+Flipboard also embraced ActivityPub, starting by spinning up their own Mastodon instance and then working to build ActivityPub directly into the core Flipboard platform. Flipboard co-founder Mike McCue started a podcast called Dot Social about the fediverse, and [wrote on Medium][9] about the potential for Flipboard:
 
 > This is the single largest expansion of the Flipboard ecosystem since we launched as a social magazine in 2010. I’m incredibly excited about how federation will benefit everyone on Flipboard and in the Fediverse. More importantly, I hope we can serve as inspiration for other apps and services contemplating the Fediverse.
 
@@ -249,8 +279,9 @@ ActivityPub is another layer on top of the web. It will always require custom so
 [1]:	https://www.w3.org/2014/06/social.html.en
 [2]:	https://tools.ietf.org/html/rfc7033
 [3]:	https://www.w3.org/wiki/SocialCG/ActivityPub/Authentication_Authorization
-[4]:	https://joinmastodon.org/servers
-[5]:	https://www.theverge.com/23990974/social-media-2023-fediverse-mastodon-threads-activitypub
-[6]:	https://www.threads.net/@zuck/post/C0zXcQmxO77
-[7]:	https://www.threads.net/@mosseri/post/C01zMgWp4V-
-[8]:	https://medium.com/@mmccue/flipboard-begins-to-federate-4a80d6bdc209
+[4]:	https://bookwyrm.social
+[5]:	https://joinmastodon.org/servers
+[6]:	https://www.theverge.com/23990974/social-media-2023-fediverse-mastodon-threads-activitypub
+[7]:	https://www.threads.net/@zuck/post/C0zXcQmxO77
+[8]:	https://www.threads.net/@mosseri/post/C01zMgWp4V-
+[9]:	https://medium.com/@mmccue/flipboard-begins-to-federate-4a80d6bdc209

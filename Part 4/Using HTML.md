@@ -76,7 +76,7 @@ And these attributes are allowed on certain elements:
 * **img**: `src`, `style`, `class`, `width`, `height`, `alt`, `loading`
 * **audio**: `src`, `controls`
 * **video**: `src`, `controls`, `width`, `height`, `preload`, `poster`, `alt`, `playsinline`, `style`, `class`
-* **source**: src, type
+* **source**: `src`, `type`
 
 For `style`, only these CSS property names are allowed:
 
@@ -116,7 +116,7 @@ For stronger emphasis, surround the text with two asterisks. This will produce b
 
 Photos in Markdown are where more attention is needed. Because Markdown syntax for referencing an image does not support width and height attributes, it is best to use the `img` HTML tag directly.
 
-When cross-posting from your blog to other services, Micro.blog checks the width and height to determine if it's a photo that should be included in the cross-posting. Some platforms use small images for emoji or tracking pixels. We don't want to include those when sending the post to other services. If there is no width and height attributes, Micro.blog will try to quickly download the image to check its size.
+When cross-posting from your blog to other services, Micro.blog checks the width and height to determine if it's a photo that should be included in the cross-posting. Some platforms use small images for emoji or tracking pixels. We don't want to include those when sending the post to other services. If there is no width and height attributes, Micro.blog will try to download the image to check its size.
 
 When writing longer blog posts with multiple photos in apps like Sunlit, the app is responsible for first uploading all the photos, then creating the full HTML for the post with references to the uploaded photos.
 
@@ -136,7 +136,7 @@ Platforms that invent their own format for retweet-style quotes may have other i
 
 ---- 
 
-Using HTML helps decouple content from platforms. Twitter, Instagram, and Snapchat would love everyone to post content in those platforms’ format, because then native ads which are the same size as your own content can be inserted into the platform’s dynamic feed. Posting content as HTML to your own site lets the content be readable in a variety of services based on the open web, from pages at your own domain name, to feed readers or newsletters.
+Using HTML helps decouple content from platforms. Twitter, Instagram, and Snapchat would love everyone to post content in those platforms’ formats, because then native ads which are the same size as your own content can be inserted into the platform’s dynamic feed. Posting content as HTML to your own site lets the content be readable in a variety of services based on the open web, from pages at your own domain name, to feed readers or newsletters.
 
 [1]:	https://html.spec.whatwg.org/multipage/
 [2]:	https://daringfireball.net/projects/markdown/

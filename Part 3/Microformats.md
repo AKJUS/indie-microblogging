@@ -40,11 +40,11 @@ In a [FAQ for the AT Protocol][9], Bluesky writes about why they chose to create
 
 > [RDF][10] is intended for extremely general cases in which the systems share very little infrastructure. It’s conceptually elegant but difficult to use, often adding a lot of syntax which devs don't understand. JSON-LD simplifies the task of consuming RDF vocabularies, but it does so by hiding the underlying concepts, not by making RDF more legible.
 
-AT Protocol instead uses a schema system called Lexicon. It also uses JSON but is a little more concise and readable than JSON-LD.
+AT Protocol instead uses a schema system called Lexicon. It also uses JSON but is a little more concise and readable than JSON-LD. If you look at JSON responses from Mastodon, which uses JSON-LD, there is significant bloat, often with JSON-LD’s `@context` field taking up more space in the response than the actual content.
 
 There are some people who have really interesting, unique needs for more complicated structured data. Those people can continue to use RDF and JSON-LD. The rest of us should use something simpler.
 
-Let me underscore the timeline at the beginning of my story, when my friend Travis and I were giving that presentation about MCF. That was _25 years ago_. There are web developers working today that have lived their entire lives in the span of time since these ideas first started appearing.
+Let me underscore the timeline at the beginning of my story, when my friend Travis and I were giving that presentation about MCF. That was _over 25 years ago_. There are web developers working today that have lived their entire lives in the span of time since these ideas first started appearing.
 
 In a post in 2001 titled [Metacrap][11], Cory Doctorow had cut through some of the optimism:
 
@@ -176,7 +176,7 @@ The classes in Microformats were expanded as needed. In 2008, `in-reply-to` was 
 	  <div class="p-name p-content">Great post!</div>
 	</div>
 
-Replies are common because our goal is to get web sites talking to each other. We cover this and the Webmention protocol in a later chapter.
+Replies are common because our goal is to get websites talking to each other. We cover this and the Webmention protocol in a later chapter.
 
 ### Testing your Microformats
 

@@ -12,7 +12,7 @@ A community doesn't need to be on the largest platform, where "everyone" is. It 
 
 But for most bloggers, it didn't last. As Twitter and Facebook became more popular, blog comments were also being overrun with spam. Bloggers were finding that fewer people left comments on their posts, and when they did it was becoming a chore to manage.
 
-Many bloggers closed their comments and pointed people to reply on Twitter instead. Eventually they abandoned their own web sites and just moved to Twitter or Facebook.
+Many bloggers closed their comments and pointed people to reply on Twitter instead. Eventually they abandoned their own websites and just moved to Twitter or Facebook.
 
 As we reverse that trend and bring back indie blogs, we should also think about the role of communities around those blogs, so that bloggers don't feel isolated and move back to a larger platform. Not all blogs need comments. But most blogs would benefit from being part of a platform that allows cross-site replies, connecting blogs together that share a common interest.
 
@@ -23,4 +23,4 @@ The web was always meant to be a read-write medium. Not just browsing, but posti
 Most people are not creating whole web pages, but instead fragments of what could be a page: a microblog post or a reply to someone else's posts. Together, all these posts and replies form communities. We should own this content, connecting our own blogs with replies on other blogs, and copying it only to platforms that are designed to encourage healthy conversations.
 
 [1]:	https://discursive.adamprocter.co.uk/2018/07/13/microblog-is-a.html
-[2]:	https://overcast.fm/+WaH85BWT0
+[2]:	https://om.co/2020/01/16/podcast-interviewing-matt-mullenweg/

@@ -28,7 +28,7 @@ This book is divided into 6 major parts:
 * **Part 2: Foundation** outlines the basics of indie microblogging, with a quick-start guide for WordPress and how Micro.blog fits into the ecosystem of indie microblogs. There’s an overview of JSON Feed and an interview with NetNewsWire developer Brent Simmons.
 * **Part 3: IndieWeb** is all about the IndieWeb movement. I’ll cover why we care about owning our content and the building block API standards of the IndieWeb. It’s capped off with an interview with IndieWeb co-founders Tantek Çelik and Aaron Parecki.
 * **Part 4: Hypertext** covers the unique nature of web formats, focusing on photography, UI, and HTML.
-* **Part 5: Decentralization** takes us to Mastodon, WebSub, and real-time notifications between blogs.
+* **Part 5: Decentralization** takes us to Mastodon, Bluesky, WebSub, and real-time notifications between blogs.
 * **Part 6: Community** is about the intersection between blogs and platforms. The impact of harassment, misinformation, and politics on healthy communities. We end with a conversation with Micro.blog community manager Jean MacDonald.
 
 Getting millions of new bloggers to post to their own site won't be easy. Nothing worthwhile ever is. It seems like a never-ending hassle to convince people to blog when Facebook onboards new users so effortlessly. But we've seen in the years since Micro.blog launched that this will work. There's no question that more people are blogging today because of Micro.blog and the larger IndieWeb movement, and we've only scratched the surface.

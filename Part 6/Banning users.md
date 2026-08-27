@@ -14,7 +14,7 @@ Hate speech is not tolerated on Micro.blog. I first checked if this user had rep
 
 We draw a line between your blog and how it affects other users in the community. This is the premise behind _open gardens_. Your blog is your own, at your own domain name, and if it’s not interfering with other users — by harassing or spamming them — then we leave your blog alone. But even with this principle on the separation between your blog and the community, some content can’t be allowed. White supremacy has no place on Micro.blog.
 
-We are small enough that we can at least skim through many posts that come through micro.blog. Spammers often create free accounts. They use the trial to post advertisements for herbal supplements or dating services. Those are easy to find, and because these “users” aren’t going to pay even $5 to keep posting, no one usually notices. We can delete their account or they fade away on their own.
+We are small enough that we can at least skim through many posts that come through Micro.blog. Spammers often create free accounts. They use the trial to post advertisements for herbal supplements or dating services. Those are easy to find, and because these “users” aren’t going to pay even $5 to keep posting, no one usually notices. We can delete their account or they fade away on their own.
 
 Reporting is valuable when we miss something. It’s not the first line of defense, but as in the case of the white supremacist reported from Twitter, user reporting can provide important context we might otherwise miss.
 
@@ -50,7 +50,7 @@ I should have been excited about this, but instead my first reaction was frustra
 
 > Finally, new technologies have emerged to make a decentralized approach more viable. Blockchain points to a series of decentralized solutions for open and durable hosting, governance, and even monetization. Much work to be done, but the fundamentals are there.
 
-Even with all the current excitement about the blockchain, for the web any technology with its roots in cryptocurrency may be a solution in search of a problem. Just as Microformats was a simpler approach to metadata compared to RDF and the Semantic Web, more traditional web APIs are more than capable of undergirding the evolution of the web instead of crypto.
+Even with all the current excitement about the blockchain, for the web any technology with its roots in cryptocurrency may be a solution in search of a problem. Just as using Microformats was a simpler approach to metadata compared to RDF and the Semantic Web, more traditional web APIs are more than capable of undergirding the evolution of the web instead of crypto.
 
 Anything the blockchain touches will have new complexity and energy resource trade offs. As Mastodon founder [Eugen Rochko posted][8]:
 
@@ -88,13 +88,13 @@ Project Blue Sky, the effort to develop a new social media protocol that Jack Do
 
 > The DNS handle is a user-facing identifier — it should be shown in UIs and promoted as a way to find users. Applications resolve handles to DIDs and then use the DID as the stable canonical identifier.
 
-Using the `@example.com` DNS syntax matches Micro.blog’s own method to send an @-reply to other web sites. The AT Protocol then maps it to a more cryptic identifier — DID, or [Decentralized Identifier][14] — that the user does not need to see.
+Using the `@example.com` DNS syntax matches Micro.blog’s own method to send an @-reply to other websites. The AT Protocol then maps it to a more cryptic identifier — DID, or [Decentralized Identifier][14] — that the user does not need to see.
 
 And meanwhile, we still have existing IndieWeb standards. Like the AT Protocol, the IndieWeb has always prioritized domain names. If the AT Protocol takes off, there could be a shared philosophy between it and the IndieWeb about using domain names for identity.
 
 ---- 
 
-In 2018, Alex Jones and his conspiracy theory-fueled site Infowars finally ran against several platform’s rules around hate speech. [From The New York Times][15]:
+In 2018, Alex Jones and his conspiracy theory-fueled site Infowars finally ran up against several platform’s rules around hate speech. [From The New York Times][15]:
 
 > After weeks of criticism, YouTube, Facebook, Apple, and Spotify all acted to essentially erase many of his videos and posts from their services. In many cases, the companies are saying he violated their terms regarding hate speech and a number of other rules. Alex Jones today in his show dedicated nearly all four hours to what he called censorship of his platform.
 
@@ -130,7 +130,7 @@ The next day, [Mark Zuckerberg announced][20] that the temporary block on Trump�
 
 > We believe the risks of allowing the President to continue to use our service during this period are simply too great. Therefore, we are extending the block we have placed on his Facebook and Instagram accounts indefinitely and for at least the next two weeks until the peaceful transition of power is complete.
 
-When the narrative flipped against Trump, the changes at the big platforms snowballed. Alex Jones’s ban from YouTube earlier was almost a trial run. Trump banned from Facebook, Instagram, and Twitter. The iOS app Parler banned from the App Store. Conservatives often talk of free speech, but no one is guaranteed amplification.
+When the narrative flipped against Trump, the changes at the big platforms snowballed. Alex Jones’s ban from YouTube earlier was almost a trial run. Trump was banned from Facebook, Instagram, and Twitter. The entire iOS app Parler was banned from the App Store. Conservatives often talk of free speech, but no one is guaranteed amplification.
 
 Aza Raskin, co-founder of the Center for Humane Technology, [has spoken about][21] the difference between speech and reach. “We are not guaranteed the right to freedom of reach,” he said. Reach is amplification, usually at a higher level of the internet stack and not a foundational level preventing someone from speaking at all.
 

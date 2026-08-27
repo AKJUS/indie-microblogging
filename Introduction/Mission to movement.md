@@ -2,7 +2,7 @@
 
 _“Progress depends on our changing the world to fit us. Not the other way around.” — Halt and Catch Fire_
 
-Basecamp started as the Chicago-based 37signals, a web design company known for pushing back against accepted conventions. They used to say that [copywriting is a form of user interface design][1]:
+37signals is a web company known for pushing back against accepted conventions. They used to say that [copywriting is a form of user interface design][1]:
 
 > Great interfaces are written. If you think every pixel, every icon, every typeface matters, then you also need to believe every letter matters.
 
@@ -30,16 +30,16 @@ It might seem that short and often ephemeral posts have trained us with short-at
 
 This book you're reading is longer than I had intended, especially ironic given that its subject matter is short posts. But the goal is big. It's not about any one new social network. It's about a new way of thinking about publishing on the web.
 
-Temporary, viral movements like `#DeleteFacebook` are not enough. We need something sustainable that permanently changes the narrative.
+It’s not enough to have temporary, viral movements like `#DeleteFacebook` or outrage over Elon Musk’s latest meme tweets. We need something sustainable that permanently changes the narrative.
 
-What is the mission for indie microblogging? There are 4 guiding themes in this book that we will keep returning to:
+What is the mission for indie microblogging? There are four guiding themes in this book that we will keep returning to:
 
 * **Better features.** Learning from the user interface innovations of social networks — both the good choices and what we can do better.
 * **Open standards.** How the work of the IndieWeb and even older blogging APIs can improve interoperability and freedom on the web.
 * **Content ownership.** Why nearly everything starts with personal domain names.
 * **Smaller social networks.** The technical overview of Micro.blog, Mastodon, and pushback against massive social networks.
 
-It's the combination of all 4 themes that will move the web forward.
+It's the combination of all four themes that will move the web forward.
 
 [1]:	https://gettingreal.37signals.com/ch09_Copywriting_is_Interface_Design.php
 [2]:	https://warpspire.com/posts/idea-businesses

@@ -10,7 +10,7 @@ Misinformation littered the Facebook news feed, fake headlines re-shared to frie
 
 > Throughout the 2016 campaign, I watched how lies insinuate themselves into people’s brains if hammered often enough. Fact checking is powerless to stop it. Friends of mine who made calls or knocked on doors for me would talk to people who said they couldn’t vote for me because I had killed someone, sold drugs, and committed any number of unreported crimes, including how I handled my emails. The attacks were repeated so frequently that many people took it as an article of faith that I must have done _something_ wrong.
 
-Facebook as the world’s largest platform intertwined several problems — viral spread of fake news, information bubbles, and Cambridge Analytica’s harvesting of user data — pushing them together at scale to create a perfect storm of misinformation. Not a coordinated political campaign but digital chaos outside traditional polls and media.
+Facebook, as the world’s largest platform, intertwined several problems — viral spread of fake news, information bubbles, and Cambridge Analytica’s harvesting of user data — pushing them together at scale to create a perfect storm of misinformation. Not a coordinated political campaign but digital chaos outside traditional polls and media.
 
 Cambridge Analytica was a company that gathered the personal data Facebook originally allowed third-party apps to access, including data on friends that used an app. While only 270,000 people directly used the app, Cambridge Analytica was able to collect data on over 87 million people from those connections. They used this data to help political campaigns more efficiently target ads.
 
@@ -150,9 +150,17 @@ Viral spread is a feature of large social networks that can be a double-edged sw
 
 Black Lives Matter would not have been as impactful a movement if not for massive social media. Shining a light on hateful rhetoric or even physical violence against minorities often starts from individuals whose videos achieve a reach far beyond their usual audience.
 
+And yet the algorithm doesn’t currently know what to amplify and what to make unfindable. Media Matters reported in 2025 on [racist videos spreading virally on TikTok][21]:
+
+> Users are also posting misleading AI-generated videos of immigrants and protesters, including videos in which protesters are run over by cars. And in an especially dystopian nightmare, AI-generated videos are reenacting marginalized groups’ historical traumas, depicting concentration camps and Ku Klux Klan attacks on Black Americans.
+
+The full report from Media Matters is very disturbing. It’s not just a couple videos that fell through the moderation cracks. It’s many videos and millions of views. TikTok is designed for this.
+
+Infinite content plus viral social platforms is a bad combination. Curation will be nearly impossible as long as social media is designed around likes, reposts, and algorithms. AI is the accelerant to garbage abundance. The best way to stop the spread of hateful content or misinformation is for platform developers to consider that virality is as much a bug as it is a feature.
+
 ---- 
 
-The government is more attuned to the viral spread of misinformation than ever. In 2021, Surgeon General Vivek Murthy spoke about [health misinformation during the COVID pandemic][21]. In a statement and Q&A announcing the guidance, Murthy said:
+The government is more attuned to the viral spread of misinformation than ever. In 2021, Surgeon General Vivek Murthy spoke about [health misinformation during the COVID pandemic][22]. In a statement and Q&A announcing the guidance, Murthy said:
 
 > Modern technology companies have enabled misinformation to poison our information environment, with little accountability to their users. […] They've designed product features, such as like buttons, that reward us for sharing emotionally-charged content, not accurate content. And their algorithms tend to give us more of what we click on, pulling us deeper and deeper into a well of misinformation.
 
@@ -180,6 +188,7 @@ There must be balance, letting the good ideas spread while reserving control ove
 [18]:	https://factbook.org/
 [19]:	https://twitter.com/JuddLegum/status/1220161152770105349
 [20]:	https://twitter.com/TwitterSupport/status/1270783537667551233
-[21]:	https://www.hhs.gov/surgeongeneral/reports-and-publications/health-misinformation/index.html
+[21]:	https://www.mediamatters.org/tiktok/racist-ai-generated-videos-are-newest-slop-garnering-millions-views-tiktok
+[22]:	https://www.hhs.gov/surgeongeneral/reports-and-publications/health-misinformation/index.html
 
 [image-1]:	https://book.micro.blog/uploads/2020/d96f52015c.png

@@ -39,10 +39,10 @@ IndieWeb-friendly apps like OwnYourSwarm use IndieAuth to sign in to Micro.blog.
 
 ![][image-2]
 
-Next, Micro.blog fetches some information from their site to know which service is handling authentication for the user. For OAuth, API URLs would be provided in a platform's API documentation and the developer would use those URLs in their code. For IndieAuth, because there are many web sites and authentication providers, these URLs are stored in `link` tags on the site's home page:
+Next, Micro.blog fetches some information from their site to know which service is handling authentication for the user. For OAuth, API URLs would be provided in a platform's API documentation and the developer would use those URLs in their code. For IndieAuth, because there are many websites and authentication providers, these URLs are stored in `link` tags on the site's home page:
 
-	<link rel="authorization_endpoint" href="https://micro.blog/indieauth/auth" />
-	<link rel="token_endpoint" href="https://micro.blog/indieauth/token" />
+	<link rel="authorization_endpoint" href="https://micro.blog/indieauth/auth">
+	<link rel="token_endpoint" href="https://micro.blog/indieauth/token">
 
 The user is then directed to sign in and approve access to the app OwnYourSwarm:
 

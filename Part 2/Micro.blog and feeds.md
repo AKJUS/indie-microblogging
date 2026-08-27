@@ -8,34 +8,35 @@ The central user interface in Micro.blog is the timeline. The timeline shows pos
 
 ![][image-1]
 
+Dave Winer calls a system like this [inbound RSS][2] — when a platform can read external feeds to add new content:
+
+> It makes sense to have outbound feeds, like a blogging tool, and it makes just as much sense as a consumer of feeds, like a feed reader, so we can easily publish stuff from other environments and people can subscribe to them exactly as if they used their editor to write it. No reason anyone needs to know. _This is absolutely the simplest and most web-like way to do federation._ And you don't need any new formats or protocols. It's all RSS on both sides.
+
 When someone you're following publishes a new post, Micro.blog displays it in the timeline. Micro.blog does some minor processing on the post HTML, striping out HTML tags or JavaScript that aren't appropriate for the timeline. Photos are displayed inline for short posts, and longer posts with titles are linked back to the author's web site.
 
-**How feeds work**
+### How feeds work
 
 A single account on Micro.blog can have one or more feeds. Unlike a traditional RSS reader where adding feeds controls which blogs you're reading, adding feeds to your account on Micro.blog controls where _your own posts_ come from. (There's a separate interface for following other blogs.)
 
 When a new post appears in these feeds, the post is added to the timeline. Usually there is just one feed: the user’s microblog. If the user writes longer posts at a different blog, or they want to connect bookmarks or other extra posts into the timeline, they can add those feeds to their account too.
 
-The following screenshot shows the Edit Feeds screen. When your blog is hosted on Micro.blog, the feed for your blog is added to this screen automatically:
+The following screenshot shows the Sources section. These feeds are the source for posts for your profile. When your blog is hosted on Micro.blog, the feed for your blog is added to this screen automatically:
 
 ![][image-2]
 
-This screen also controls which feeds cross-post to other platforms like Twitter or Mastodon. When Micro.blog sees a new post in your feed, it adds it to the Micro.blog timeline and also cross-posts it those platforms that are enabled.
+This section also controls which feeds cross-post to other platforms like Bluesky or Mastodon. When Micro.blog sees a new post in your feed, it adds it to the Micro.blog timeline and also cross-posts it those platforms that are enabled.
 
-Inside the feed are your recent posts in JSON or XML. Here's an example of what the latest post might look like in JSON:
+Inside the feed are your recent posts in JSON or XML. Here's a truncated example of what the latest post might look like in JSON, with inline HTML for links:
 
 	{
-	  "id": "http://manton.micro.blog/2020/01/11/starting-to-get.html",  
 	  "content_html": "<p>Starting to get excited for IndieWebCamp Austin next month! If you&rsquo;re interested in an open alternative to the big silos, I hope you&rsquo;ll join us. <a href=\"https://2020.indieweb.org/austin\">You can register</a> for $10.</p>\n",
-	  "date_published": "2020-01-11T13:56:56-06:00",
-	  "url": "https://www.manton.org/2020/01/11/starting-to-get.html"
 	}
 
 Micro.blog checks your feed for new posts as soon as the post is published, or every few minutes for blogs hosted outside of Micro.blog. (Part 5 covers how we can speed up downloading new posts.) When Micro.blog finds the new post, it adds it to the timeline so everyone following you can see it:
 
 ![][image-3]
 
-**Timeline display rules**
+### Timeline display rules
 
 Micro.blog follows a few rules when processing your RSS or JSON Feed into microblog posts to show in the timeline:
 
@@ -43,7 +44,8 @@ Micro.blog follows a few rules when processing your RSS or JSON Feed into microb
 * If the post has no title and is _over_ 300 characters, the text is truncated with a link back to the full post on your site.
 * If the post includes a block quote, the limit is raised to 600 characters.
 * If there's a title and it looks like a date or number, Micro.blog ignores it, as if there were no title. It then tries to show the text in the timeline.
-* If there's a title but the entire post text is actually just a photo, it uses the title but also shows the photo inline. If there is a title, text, and photo, only the title is shown and linked back to your site.
+* If there's a title but the entire post text is actually just a photo, it uses the title but also shows the photo inline.
+* If there is a title, text, and photo, only the title is shown and linked back to your site.
 
 For any other kind of post with a title, the title is shown in the timeline with a link back to the full post on your web site. Micro.blog displays your domain name when it needs to append a link to your post.
 
@@ -58,6 +60,7 @@ By having some rules about what a microblog post is, and making it easy to follo
 Part 4 includes more details about why indie microblogs use HTML for posts. Support for HTML tags is an important part of making Micro.blog feel like an extension of the open web instead of a replacement for it.
 
 [1]:	https://www.joelonsoftware.com/2018/01/12/birdcage-liners/
+[2]:	http://scripting.com/2025/04/14/121946.html
 
 [image-1]:	https://book.micro.blog/uploads/2020/5fc0025966.png
 [image-2]:	https://book.micro.blog/uploads/2020/f7e6a1a29d.png

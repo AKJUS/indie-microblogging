@@ -28,7 +28,7 @@ Trump signed an executive order pushing back against Twitter, but it was largely
 
 There was also a question of whether a Trump tweet essentially received _more_ coverage because Twitter took action to curate it, as the curation itself became news, further repeating Trump’s claims. In other words, did the process of trying to fix the problem actually make it worse. But the context for the news matters.
 
-While it might be true that more people saw Trump's tweet because of Twitter's actions, the context in which they saw the tweet (screenshots on CNN, The New York Times, or other web sites) is completely different. Republishing the tweet puts it in a context of essentially fact-checking it, whereas if the tweet was just retweeted or shared on Facebook to millions of followers, it could do much more damage. One really important feature in Twitter's "hide this tweet" curation is that it prevents the tweet from being liked or retweeted.
+While it might be true that more people saw Trump's tweet because of Twitter's actions, the context in which they saw the tweet (screenshots on CNN, The New York Times, or other websites) is completely different. Republishing the tweet puts it in a context of essentially fact-checking it, whereas if the tweet was just retweeted or shared on Facebook to millions of followers, it could do much more damage. One really important feature in Twitter's "hide this tweet" curation is that it prevents the tweet from being liked or retweeted.
 
 ---- 
 

@@ -10,17 +10,18 @@ To expand beyond registered accounts, Micro.blog also lets users follow blogs an
 
 But the UI for Micro.blog is inspired by Twitter, not traditional feed readers. Instead of adding feed URLs to follow, Micro.blog is designed around adding "usernames" to follow.
 
-**Usernames on Micro.blog**
+### Usernames on Micro.blog
 
 Micro.blog has 3 distinct styles of usernames to make the platform more compatible with other services:
 
 * Micro.blog usernames, e.g. **@you**. These are simple usernames for @-mentioning someone else in the Micro.blog community.
 * Mastodon usernames, e.g. **@you@yourdomain.com**. When you search Micro.blog for these usernames, Micro.blog will look for the user in another federated Mastodon instance so that you can follow them.
 * IndieWeb-friendly domain names, e.g. **@yourdomain.com**. This is where I always thought we'd go for more distributed "the web is the social network" interactions. Replying to one of these usernames will send a Webmention to that user's external web site.
+* Bluesky subdomains or domain names, e.g. **@you.bsky.social** or **@yourdomain.com**. Micro.blog can follow Bluesky users directly, checking whether a domain name is a blog or a Bluesky user (or both).
 
 I'm `@manton` on Micro.blog, my blog is `manton.org`, and because Micro.blog-hosted blogs support the ActivityPub API that Mastodon uses, you can follow me from Mastodon by using `@manton@manton.org`.
 
-**Following domain names**
+### Following domain names
 
 These special domain name usernames is where I think we can bring more social network-like interactions to the full web.
 

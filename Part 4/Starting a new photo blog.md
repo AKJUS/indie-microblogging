@@ -1,9 +1,9 @@
 ## Starting a new photo blog
 
-_“Am I always starting over_
-_In a brand new story?_
-_Am I always back at one_
-_After all I’ve done?”_
+_“Am I always starting over_  
+_In a brand new story?_  
+_Am I always back at one_  
+_After all I’ve done?”_  
 _— Always Starting Over, from the broadway show If/Then_
 
 Of everything you put into social networks, photos are one of the easiest and most rewarding parts to reclaim for your own site. This is a guide for starting a new photo blog that you will actually consistently post to.
@@ -16,7 +16,7 @@ If you already have a hosted blog on [Micro.blog][1] or WordPress, you can use t
 
 Instagram will let you download an archive of all your Instagram photos. Under your profile settings, click "Security and Privacy", or [use this link][2] to request your photos archive.
 
-If you use macOS, install [Micro.blog for Mac][3]. Choose File → "Import from Instagram". Select the media.json file in the archive you received from Instagram, and Micro.blog will let you select some or all of your photos to import, preserving the dates and captions on your new photo blog.
+If you use macOS, install [Micro.blog for Mac][3]. Choose File → "Import from Instagram". Select the media.json file in the archive you received from Instagram. Micro.blog will let you select some or all of your photos to import, preserving the dates and captions on your new photo blog.
 
 ![][image-1]
 
@@ -27,6 +27,8 @@ When you post a photo with some text but no title, that photo will show up direc
 ![][image-2]
 
 Another option is to connect [OwnYourGram][5] with Micro.blog. OwnYourGram can watch your Instagram account for new photos, then copy them automatically to Micro.blog. Before setting up OwnYouGram, make sure to add your Instagram username in Micro.blog under Account → "Edit Apps".
+
+Because of Meta restricting their API, as of this writing OwnYourGram is being blocked by Instagram and can’t accept new accounts. It’s another reminder to copy your photos to a blog that you control.
 
 ---- 
 
@@ -60,7 +62,7 @@ With the canonical version of your photos on your blog, you can still think abou
 [2]:	https://www.instagram.com/download/request/
 [3]:	http://help.micro.blog/2017/mac-version/
 [4]:	http://help.micro.blog/2018/instagram-import/
-[5]:	https://micro.blog/
+[5]:	https://ownyourgram.com/
 [6]:	https://quill.p3k.io/
 
 [image-1]:	https://book.micro.blog/uploads/2020/bfbbe65f67.png

@@ -12,7 +12,7 @@ With Micro.blog we tried something different. Instead of showing all new posts, 
 
 Would a curated timeline scale to the number of tweets that Twitter processes every minute? No, but we never want to be that big, because big platforms are inherently part of the problem, no matter the best intentions of their founders.
 
-Small companies like Micro.blog can do take a different approach that wouldn’t work for others. It’s something that Paul Graham captured in his famous essay [Do Things That Don’t Scale][1], reminding early startups that they don’t need to build something that can reach scale right away, because chances are they’ll never get very big:
+Small companies like Micro.blog can take a different approach that wouldn’t work for others. It’s something that Paul Graham captured in his famous essay [Do Things That Don’t Scale][1], reminding early startups that they don’t need to build something that can reach scale right away, because chances are they’ll never get very big:
 
 > Tim Cook doesn't send you a hand-written note after you buy a laptop. He can't. But you can. That's one advantage of being small: you can provide a level of service no big company can.
 
@@ -34,7 +34,7 @@ It's an approach that more platforms will return to as they become overwhelmed w
 
 ---- 
 
-Micro.blog doesn't have special support for hashtags. It doesn't automatically link them. There's no global search yet. While Micro.blog users can include hashtags anyway, especially if they are cross-posting to Twitter, I've found that the timeline is much cleaner and readable without hashtags.
+Micro.blog doesn't have special support for hashtags. It doesn't automatically link them. There's no global search. While Micro.blog users can include hashtags, especially if they are cross-posting to Twitter / X or Mastodon, I've found that the timeline is much cleaner and readable without hashtags.
  I'm not saying we'll _never_ have hashtags. But I'm not in a particular hurry to introduce native support for them. (Once a feature is added, it can't easily be taken back. So we try to be deliberate in everything we do.)
  Hashtags and Twitter trends go together. They can be a powerful way to organize people and topics together across followers. But they can also be gamed, with troublemakers using popular hashtags to hijack your search results for their own promotion or unrelated ranting.
  It's the organizational and discovery aspect of hashtags that I most wanted to bring to Micro.blog. At the beginning of 2018, there were several discussions on Micro.blog about book clubs and reading, and this seemed like a perfect topic to experiment with. I've also noticed that people love to include an emoji in their microblog post as a kind of theme indicator — everything from 📚 to 🏀.

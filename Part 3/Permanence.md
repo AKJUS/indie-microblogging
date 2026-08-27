@@ -74,7 +74,7 @@ There are a few simple things you can do to make your blog easier to archive and
 * Avoid features that require JavaScript.
 * Limit external dependencies. Serve your photos and other media from the same domain name as your HTML, so that everything can be moved together.
 
-These are all things Micro.blog does by default. Jeff Huang also has [a collection of good tips][9] on making a web page last, starting with that first point of using simple HTML that is easily portable to any web host:
+Jeff Huang also has [a collection of good tips][9] on making a web page last, starting with that first point of using simple HTML that is easily portable to any web host:
 
 > I think we've reached the point where html/css is more powerful, and nicer to use than ever before. Instead of starting with a giant template filled with .js includes, it's now okay to just write plain HTML from scratch again.
 

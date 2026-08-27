@@ -34,7 +34,7 @@ The API was so flexible that the types of apps grew beyond what we were expectin
 
 I believed at the time that the next great app for App.net would come from the community, the developers who were passionate about the API's potential, just as early developers like [Iconfactory][5] who took a risk on Twitter years ago are still having an impact on that service today. The next great app would come from the developers who see App.net as a way to build new things.
 
-I was working on an app like that. It uses the App.net API, but not the timeline. It takes pictures, but isn’t really a photo app. It integrates with Ohai, but isn’t another location check-in app. It renders beautiful maps throughout, but isn’t about navigation. Some of the features I’m most proud of in the app wouldn’t be the same without App.net.
+I was working on an app like that. It used the App.net API, but not the timeline. It took pictures, but wasn’t really a photo app. It integrated with Ohai, but wasn’t another location check-in app. It rendered beautiful maps throughout, but wasn’t about navigation. Some of the features I was most proud of in the app wouldn’t be the same without App.net because the platform let apps break out from a Twitter-like API.
 
 There’s no way to know what apps will resonate with the mainstream, and which will remain niche or failures. But to have any hope of success, you have to start. You might even have to take a risk on a new platform if you want to build something new.
 

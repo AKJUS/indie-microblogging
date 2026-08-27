@@ -14,7 +14,8 @@
 * [Leaving Twitter](/Part%201/Leaving%20Twitter.md)
 * [App.net](/Part%201/App.net.md)
 * [WordPress and Tumblr](/Part%201/WordPress%20and%20Tumblr.md)
-* [Interview with Leah Culver](/Part%201/Interview%20with%20Leah%20Culver.md)
+* [Interlude: Interview with Leah Culver](/Part%201/Interlude-%20Interview%20with%20Leah%20Culver.md)
+* [Interlude: Interview with Marco Arment](/Part%201/Interlude-%20Interview%20with%20Marco%20Arment.md)
 * [Toward decentralization](/Part%201/Toward%20decentralization.md)
 
 **[Part 2: Foundation](/Part%202/Part%202-%20Foundation.md)**
@@ -31,7 +32,7 @@
 * [Migration](/Part%202/Migration.md)
 * [Blogging workflow](/Part%202/Blogging%20workflow.md)
 * [Why indie microblogging](/Part%202/Why%20indie%20microblogging.md)
-* [Interview with Brent Simmons](/Part%202/Interview%20with%20Brent%20Simmons.md)
+* [Interlude: Interview with Brent Simmons](/Part%202/Interlude-%20Interview%20with%20Brent%20Simmons.md)
 
 **[Part 3: IndieWeb](/Part%203/Part%203-%20IndieWeb.md)**
 
@@ -46,7 +47,7 @@
 * [Webmention](/Part%203/Webmention.md)
 * [Bridgy](/Part%203/Bridgy.md)
 * [Blog archive format](/Part%203/Blog%20archive%20format.md)
-* [Interview with Tantek Çelik and Aaron Parecki](/Part%203/Interview%20with%20Tantek%20%C3%87elik%20and%20Aaron%20Parecki.md)
+* [Interlude: Interview with Tantek Çelik and Aaron Parecki](/Part%203/Interlude-%20Interview%20with%20Tantek%20%C3%87elik%20and%20Aaron%20Parecki.md)
 
 **[Part 4: Hypertext](/Part%204/Part%204-%20Hypertext.md)**
 
@@ -56,16 +57,19 @@
 * [Using HTML](/Part%204/Using%20HTML.md)
 * [Starting a new photo blog](/Part%204/Starting%20a%20new%20photo%20blog.md)
 * [Sunlit and photo feeds](/Part%204/Sunlit%20and%20photo%20feeds.md)
+* [Linkblogging](/Part%204/Linkblogging.md)
+* [Interlude: Interview with Om Malik](/Part%204/Interlude-%20Interview%20with%20Om%20Malik.md)
 
 **[Part 5: Decentralization](/Part%205/Part%205-%20Decentralization.md)**
 
 * [Notifications](/Part%205/Notifications.md)
 * [Mastodon](/Part%205/Mastodon.md)
-* [Pixelfed](/Part%205/Pixelfed.md)
+* [Fediverse](/Part%205/Fediverse.md)
 * [ActivityPub](/Part%205/ActivityPub.md)
 * [Your blog](/Part%205/Your%20blog.md)
 * [WebSub](/Part%205/WebSub.md)
 * [Indie readers](/Part%205/Indie%20readers.md)
+* [Atmosphere](/Part%205/Atmosphere.md)
 
 **[Part 6: Community](/Part%206/Part%206-%20Community.md)**
 
@@ -78,11 +82,12 @@
 * [Discovery](/Part%206/Discovery.md)
 * [Popularity contests](/Part%206/Popularity%20contests.md)
 * [Banning users](/Part%206/Banning%20users.md)
-* [Interview with Jean MacDonald](/Part%206/Interview%20with%20Jean%20MacDonald.md)
+* [Interlude: Interview with Jean MacDonald](/Part%206/Interlude-%20Interview%20with%20Jean%20MacDonald.md)
 
 **[Conclusion](/Conclusion/Conclusion.md)**
 
 * [Breaking up Facebook](/Conclusion/Breaking%20up%20Facebook.md)
+* [Exodus](/Conclusion/Exodus.md)
 * [The way out](/Conclusion/The%20way%20out.md)
 * [Sticking to the mission statement](/Conclusion/Sticking%20to%20the%20mission%20statement.md)
 * [Special thanks](/Conclusion/Special%20thanks.md)
