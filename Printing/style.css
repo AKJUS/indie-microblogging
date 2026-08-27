@@ -12,7 +12,7 @@ body {
 	line-height: 1.5;
 	margin:      0;
 	padding:     0.5em 0.5em 0.5em 0.5em;
-	background:  rgb(253, 253, 253);
+	background:  #fff;
 	margin:      auto;
 }
 
@@ -113,14 +113,14 @@ img {
 	height: auto;
 }
 
+img.smallish {
+	max-width: 50%;
+}
+
 figure {
 	margin:     2em 0 1.5em 0;
 	width:      100%;
 	text-align: center;
-}
-
-figure img {
-	border: 1px solid #ccc;
 }
 
 figcaption {
@@ -312,35 +312,33 @@ pre {
 }
 
 table {
-	display: block;
-	overflow-x: scroll;
+	min-width: 50%;
 	table-layout: auto;
-	margin-left: -10px;
-	margin-right: -10px;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	border-collapse: separate;
-	border-spacing: 10px 0;
+	margin: 50px auto;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 th, td {
 	padding-left: 10px;
 	padding-right: 10px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 	text-align: left;
 	vertical-align: baseline;
 }
 
 th {
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid #ddd;
 }
 
 thead:first-of-type > tr:first-of-type > th {
-	border-bottom: 3px solid black;
+	border-bottom: 1px solid #ddd;
 }
 
 td {
+	font-family: 'Courier', monospace;
+	font-size: 80%;
 	border-bottom: 1px solid #ddd;
 }
 
